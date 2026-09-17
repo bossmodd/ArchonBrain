@@ -1,0 +1,91 @@
+import { chromium } from '@playwright/test';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import assert from 'node:assert/strict';
+
+const url = process.argv[2] || 'http://127.0.0.1:4173';
+const systemChrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || (existsSync(systemChrome) ? systemChrome : undefined) });
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+const errors = [];
+page.on('pageerror', error => errors.push(error.message));
+page.on('console', message => { if (['error', 'warning'].includes(message.type())) errors.push(message.text()); });
+mkdirSync('docs/screenshots', { recursive: true });
+const captures = {};
+const state = () => page.evaluate(() => window.archonDebug.snapshot({ measureEyes: false }));
+async function at(time) {
+  await page.evaluate(value => window.archonDebug.setTime(value), time);
+  await page.waitForFunction(value => window.archonDebug.snapshot({ measureEyes: false }).gasTime === value, time);
+}
+async function capture(name) {
+  await page.waitForTimeout(180);
+  await page.screenshot({ path: `docs/screenshots/interaction-${name}.png` });
+  captures[name] = await state();
+}
+
+try {
+  const asset = page.waitForResponse(response => response.url().endsWith('/models/archon-rigged.glb'));
+  await page.goto(url);
+  await page.locator('#status').filter({ hasText: 'Ready' }).waitFor();
+  const response = await asset;
+  assert.equal(response.status(), 200);
+  await at(0);
+  await page.getByRole('button', { name: 'Preview', exact: true }).click();
+  await at(0.65);
+  await capture('prepare');
+  await at(1.1);
+  await capture('gather');
+  await page.getByRole('button', { name: 'Body', exact: true }).click();
+  await capture('gather-body');
+  await page.getByRole('button', { name: 'Composite', exact: true }).click();
+  await at(1.3);
+  await at(1.48);
+  await capture('reach');
+  await page.getByRole('button', { name: 'Body', exact: true }).click();
+  await capture('reach-body');
+  await page.getByRole('button', { name: 'Composite', exact: true }).click();
+  await at(2.4);
+  await capture('absorb');
+  assert.equal(captures.absorb.interaction.connection.strength, 1);
+  assert.deepEqual(captures.absorb.interaction.connection.frontFacing, [true, true]);
+  const eyeGap = await page.evaluate(() => window.archonDebug.snapshot().eyeSurfaceGap);
+  assert.ok(eyeGap < 0.02, `Eye light detached by ${eyeGap}`);
+  await page.getByRole('button', { name: 'Body', exact: true }).click();
+  await capture('body');
+  await page.getByRole('button', { name: 'Composite', exact: true }).click();
+  await page.getByRole('button', { name: 'Orbit', exact: true }).click();
+  await page.mouse.move(690, 450);
+  await page.mouse.down();
+  await page.mouse.move(855, 500, { steps: 18 });
+  await page.mouse.up();
+  await page.waitForTimeout(400);
+  await capture('orbit');
+  await page.mouse.move(720, 400);
+  await page.mouse.down();
+  await page.mouse.move(720, 850, { steps: 18 });
+  await page.mouse.up();
+  await page.mouse.wheel(0, -350);
+  await page.waitForTimeout(500);
+  await capture('top');
+  await page.getByRole('button', { name: 'Body', exact: true }).click();
+  await capture('top-body');
+  await page.getByRole('button', { name: 'Composite', exact: true }).click();
+  await page.getByRole('button', { name: 'Orbit', exact: true }).click();
+  await page.getByRole('button', { name: 'Stop', exact: true }).click();
+  await at(2.72);
+  await capture('release');
+  await at(3.8);
+  await capture('idle');
+  assert.equal(captures.idle.interaction.pose, 0);
+  assert.equal(captures.idle.interaction.connection.strength, 0);
+  assert.equal(captures.idle.previewVisible, false);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole('button', { name: 'Preview', exact: true }).click();
+  await at(5.1);
+  await at(6.2);
+  await capture('mobile');
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  assert.deepEqual(errors, []);
+  const evidence = { verifiedAt: new Date().toISOString(), url, glbHTTP: response.status(), errors, eyeGap, captures };
+  writeFileSync('docs/interaction-verification.json', JSON.stringify(evidence, null, 2) + '\n');
+  console.log(JSON.stringify({ ...evidence, captures: Object.keys(captures) }, null, 2));
+} finally { await browser.close(); }

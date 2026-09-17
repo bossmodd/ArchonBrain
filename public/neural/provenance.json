@@ -1,0 +1,53 @@
+{
+  "repository": "https://github.com/satorunet/hae",
+  "commit": "3625e01b09e5960a54722143ea03e67c845b88bb",
+  "upstreamModel": "https://github.com/philshiu/Drosophila_brain_model",
+  "paper": "https://doi.org/10.1038/s41586-024-07763-9",
+  "dataset": "FlyWire v783",
+  "codeLicense": "MIT",
+  "dataLicense": "CC-BY-4.0",
+  "dataAttribution": [
+    "FlyWire Consortium; Dorkenwald, Matsliah et al. 2024",
+    "Cell annotations: Schlegel et al. 2024"
+  ],
+  "changes": "Vendored WASM, wrapper, graph and groups unchanged. Default LIF parameters and no plasticity. Original LC11/near profile has no silencing. Remote olfactory profile applies the pinned ningen tame783.json list of 161 silenced neurons; no learned weights.",
+  "files": [
+    {
+      "file": "flybrain.js",
+      "bytes": 18388,
+      "sha256": "2495511b44d3bfe392a6ac6af2e313411d8cd891cc243bddb419581ed408bdd4",
+      "source": "https://github.com/satorunet/hae/blob/3625e01b09e5960a54722143ea03e67c845b88bb/flybrain/flybrain.js"
+    },
+    {
+      "file": "flybrain.wasm",
+      "bytes": 19083,
+      "sha256": "8391f8b7ab590928ff60a8cc6133cbf3403d5f1d6fc45ccab2f99463518597ad",
+      "source": "https://github.com/satorunet/hae/blob/3625e01b09e5960a54722143ea03e67c845b88bb/flybrain/flybrain.wasm"
+    },
+    {
+      "file": "data/flywire783.fbg.gz",
+      "bytes": 29901431,
+      "sha256": "f34ec0eb543cfb58bee431e65822caa05e4de8f2f822aa1a9823214bae5ddc7f",
+      "source": "https://github.com/satorunet/hae/blob/3625e01b09e5960a54722143ea03e67c845b88bb/flybrain/data/flywire783.fbg.gz"
+    },
+    {
+      "file": "data/groups783.json",
+      "bytes": 143160,
+      "sha256": "9ddcf287500aa8d5b68f9e63b9f0eaf532649dadfe5a0d9de8ee3158e618a906",
+      "source": "https://github.com/satorunet/hae/blob/3625e01b09e5960a54722143ea03e67c845b88bb/flybrain/data/groups783.json"
+    },
+    {
+      "file": "data/tame783.json",
+      "bytes": 1113,
+      "sha256": "cb415333073492a3e76e16a9e606edb07b99715dd983f93f8232d18c4bb0af1b",
+      "source": "https://github.com/satorunet/hae/blob/3625e01b09e5960a54722143ea03e67c845b88bb/ningen/web/data/tame783.json"
+    }
+  ],
+  "remoteAdapter": {
+    "input": "ningen odMeat: ORN_DP1m, ORN_DC4, ORN_VL2a, ORN_VM7d, ORN_VM7v, per side; 0..48 Hz per neuron",
+    "outputs": "DNa02 L/R steering; goL/goR mean of DNa03,DNa13,DNa15,DNa16,DNp32 per side; DNp09/MDN preserved; MN9 unchanged",
+    "sensoryChanges": "world length units: signal reach 6, sensor offset +/-0.6; source contrast 6 -> 12; rate 14*log1p(5*concentration) retained",
+    "motorChanges": "forward max(DNp09,goL,goR)/12; remote yaw (DNa02L-DNa02R)/10 clamped +/-1 then *1.1; LC11 yaw divisor remains 50",
+    "excluded": "No source target-coordinate seek, hunger, plasticity or pretrained weights copied."
+  }
+}

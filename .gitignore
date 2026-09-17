@@ -1,0 +1,41 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+
+# Local settings, credentials, and generated reports
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+test-results*/
+.codex/
+.agents/
+.idea/
+.vscode/
+plan.md
+
+# Historical working notes and captures stay local. Publish curated docs and
+# the recorded fixtures required by the existing regression scripts only.
+docs/**
+!docs/DEVELOPMENT.md
+!docs/ASSETS.md
+!docs/rig-study.html
+!docs/neural/
+docs/neural/**
+!docs/neural/approach-trials.json
+!docs/neural/approach-app-summary.json
+!docs/neural/two-source-baseline.json
+!docs/neural/two-source-trials.json
+!docs/neural/two-source-verification.json
+!docs/neural/view-quality-baseline.json
+!docs/first-experience/
+docs/first-experience/**
+!docs/first-experience/range-conditions.json
+.npmrc
+.pnpm-store/
+coverage/
+*.tsbuildinfo

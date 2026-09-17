@@ -1,0 +1,3325 @@
+{
+  "at": "2026-09-16T21:35:43.846Z",
+  "url": "http://127.0.0.1:4173",
+  "timeoutSeconds": 30,
+  "contactRange": 2.3,
+  "assist": false,
+  "cases": [
+    {
+      "key": "left/1/0",
+      "name": "left",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.5628216960924584,
+      "minDistance": 1.5628216960924584,
+      "initialBearing": 1.0471975511965976,
+      "contactBearing": 0.844422784357536,
+      "finalBearing": 0.26810592763861907,
+      "contactSeconds": 5.299999999999997,
+      "absorptionSeconds": 6.699999999999992,
+      "remaining": 0.2941207227270441,
+      "pose": {
+        "x": 1.927535442750381,
+        "z": 2.2852648798084423,
+        "heading": 1.486251444006496
+      },
+      "initialInputs": {
+        "signalLeft": 28.67750785233267,
+        "signalRight": 2.1219448677236405,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.5333333333333334,
+        "turnRight": 0.4,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 17.866666666666667,
+        "feedRight": 22.733333333333334,
+        "goLeft": 2.9499999999999944,
+        "goRight": 0.21111111111111097
+      },
+      "pathLength": 3.164803648611536,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4619
+    },
+    {
+      "key": "front/1/0",
+      "name": "front",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.257415093020561,
+      "minDistance": 1.257415093020561,
+      "initialBearing": 0,
+      "contactBearing": 1.2331976046470081,
+      "finalBearing": 0.12153422419591964,
+      "contactSeconds": 7.19999999999999,
+      "absorptionSeconds": 8.599999999999985,
+      "remaining": 0.289043223930407,
+      "pose": {
+        "x": -1.0841167472175366,
+        "z": 3.362988544405696,
+        "heading": 0.9180208046233582
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 2.3333333333333335,
+        "turnRight": 0.8333333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 17.533333333333335,
+        "feedRight": 21.6,
+        "goLeft": 3.5388888888888923,
+        "goRight": 0.3333333333333334
+      },
+      "pathLength": 4.1209596354580045,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4413
+    },
+    {
+      "key": "right/1/0",
+      "name": "right",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.5426188998988166,
+      "minDistance": 1.5426188998988166,
+      "initialBearing": -1.0471975511965976,
+      "contactBearing": 0.9237109461221071,
+      "finalBearing": 0.4142057060872689,
+      "contactSeconds": 5.4999999999999964,
+      "absorptionSeconds": 6.8999999999999915,
+      "remaining": 0.3043026562801207,
+      "pose": {
+        "x": -2.83811123543807,
+        "z": 0.5901031545363049,
+        "heading": -0.8320565773684712
+      },
+      "initialInputs": {
+        "signalLeft": 2.1219448677236405,
+        "signalRight": 28.67750785233267,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.6,
+        "turnRight": 1.2666666666666666,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 20.333333333333332,
+        "feedRight": 23.766666666666666,
+        "goLeft": 3.027777777777771,
+        "goRight": 0.4722222222222225
+      },
+      "pathLength": 3.16348403349392,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4573
+    },
+    {
+      "key": "rear/1/0",
+      "name": "rear",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 2.0264629069392197,
+      "minDistance": 2.0264629069392197,
+      "initialBearing": 3.141592653589793,
+      "contactBearing": 0.876456236467502,
+      "finalBearing": 0.49255631820190193,
+      "contactSeconds": 16.599999999999966,
+      "absorptionSeconds": 17.999999999999986,
+      "remaining": 0.32276135520775434,
+      "pose": {
+        "x": 0.7958213029613094,
+        "z": -2.1363422076589496,
+        "heading": 3.052617672958532
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1,
+        "turnRight": 2.1,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 16.266666666666666,
+        "feedRight": 20.533333333333335,
+        "goLeft": 3.416666666666666,
+        "goRight": 0.5999999999999994
+      },
+      "pathLength": 5.184187002654598,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4748
+    },
+    {
+      "key": "left/1/1.5707963267948966",
+      "name": "left",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.1744606454995088,
+      "minDistance": 1.1744606454995088,
+      "initialBearing": -0.5235987755982989,
+      "contactBearing": 0.8608309382807042,
+      "finalBearing": -0.12341683190403874,
+      "contactSeconds": 5.699999999999996,
+      "absorptionSeconds": 7.099999999999991,
+      "remaining": 0.2852748947987056,
+      "pose": {
+        "x": 2.2965200459138737,
+        "z": 2.126929456927159,
+        "heading": 1.8024993388036803
+      },
+      "initialInputs": {
+        "signalLeft": 13.105899259801824,
+        "signalRight": 25.85596111763786,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.4333333333333333,
+        "turnRight": 0.8666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 17.766666666666666,
+        "feedRight": 21.766666666666666,
+        "goLeft": 3.0611111111111056,
+        "goRight": 0.33333333333333354
+      },
+      "pathLength": 3.5438285921875385,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4583
+    },
+    {
+      "key": "front/1/1.5707963267948966",
+      "name": "front",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.3427578900968193,
+      "minDistance": 1.3427578900968193,
+      "initialBearing": -1.5707963267948966,
+      "contactBearing": 1.1521021442028943,
+      "finalBearing": 0.28863516780401627,
+      "contactSeconds": 6.999999999999991,
+      "absorptionSeconds": 8.399999999999986,
+      "remaining": 0.2952199280780494,
+      "pose": {
+        "x": -0.9391544681929644,
+        "z": 3.0403189924300618,
+        "heading": 0.48595334929462647
+      },
+      "initialInputs": {
+        "signalLeft": 0,
+        "signalRight": 28.995758367965337,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 2.066666666666667,
+        "turnRight": 1.1666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.133333333333333,
+        "feedRight": 22.4,
+        "goLeft": 3.4555555555555513,
+        "goRight": 0.3611111111111115
+      },
+      "pathLength": 3.7226134445219423,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4547
+    },
+    {
+      "key": "right/1/1.5707963267948966",
+      "name": "right",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.256019140504588,
+      "minDistance": 1.256019140504588,
+      "initialBearing": -2.617993877991494,
+      "contactBearing": 1.0494037134252894,
+      "finalBearing": 0.21128776257432122,
+      "contactSeconds": 8.599999999999985,
+      "absorptionSeconds": 9.99999999999998,
+      "remaining": 0.3079762449583341,
+      "pose": {
+        "x": -2.937572266927911,
+        "z": 0.8596706937083478,
+        "heading": -0.6438571138052719
+      },
+      "initialInputs": {
+        "signalLeft": 13.105899259801824,
+        "signalRight": 25.85596111763786,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.2666666666666666,
+        "turnRight": 1.9666666666666666,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.966666666666665,
+        "feedRight": 22.466666666666665,
+        "goLeft": 3.2333333333333267,
+        "goRight": 0.5055555555555554
+      },
+      "pathLength": 4.10849795139362,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4497
+    },
+    {
+      "key": "rear/1/1.5707963267948966",
+      "name": "rear",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.3930917986879234,
+      "minDistance": 1.3930917986879234,
+      "initialBearing": 1.5707963267948966,
+      "contactBearing": 0.7956711792550311,
+      "finalBearing": 0.08574852561159264,
+      "contactSeconds": 5.1999999999999975,
+      "absorptionSeconds": 6.5999999999999925,
+      "remaining": 0.2866940719639908,
+      "pose": {
+        "x": 0.8855787969767323,
+        "z": -2.924614044207012,
+        "heading": -2.538435169039487
+      },
+      "initialInputs": {
+        "signalLeft": 28.995758367965337,
+        "signalRight": 0,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 2.1333333333333333,
+        "turnRight": 0.5666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 19.033333333333335,
+        "feedRight": 23.133333333333333,
+        "goLeft": 3.2499999999999964,
+        "goRight": 0.3111111111111111
+      },
+      "pathLength": 3.5283270839706775,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4959
+    },
+    {
+      "key": "left/7/0",
+      "name": "left",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.4178859957684353,
+      "minDistance": 1.4178859957684353,
+      "initialBearing": 1.0471975511965976,
+      "contactBearing": 1.2092439661749186,
+      "finalBearing": 0.3464405987708019,
+      "contactSeconds": 4.999999999999998,
+      "absorptionSeconds": 6.399999999999993,
+      "remaining": 0.2923251549128918,
+      "pose": {
+        "x": 2.1126650437999137,
+        "z": 2.428975396318797,
+        "heading": 1.5317181877212451
+      },
+      "initialInputs": {
+        "signalLeft": 28.67750785233267,
+        "signalRight": 2.1219448677236405,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 2.933333333333333,
+        "turnRight": 0.3,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.1,
+        "feedRight": 23.266666666666666,
+        "goLeft": 3.73333333333334,
+        "goRight": 0.22777777777777766
+      },
+      "pathLength": 3.480944755802022,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4430
+    },
+    {
+      "key": "front/7/0",
+      "name": "front",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.5015511533158878,
+      "minDistance": 1.5015511533158878,
+      "initialBearing": 0,
+      "contactBearing": 1.0690895064714636,
+      "finalBearing": 0.24934888034908276,
+      "contactSeconds": 6.399999999999993,
+      "absorptionSeconds": 7.799999999999988,
+      "remaining": 0.2963304212942177,
+      "pose": {
+        "x": -1.1522994200533354,
+        "z": 3.0372633212715847,
+        "heading": 0.6254366919196772
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.6666666666666667,
+        "turnRight": 0.8666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.533333333333335,
+        "feedRight": 22.9,
+        "goLeft": 3.1055555555555503,
+        "goRight": 0.32222222222222235
+      },
+      "pathLength": 3.5739314456727844,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4534
+    },
+    {
+      "key": "right/7/0",
+      "name": "right",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.1689634951415973,
+      "minDistance": 1.1689634951415973,
+      "initialBearing": -1.0471975511965976,
+      "contactBearing": 0.690989854383296,
+      "finalBearing": -0.2520154114428464,
+      "contactSeconds": 5.099999999999998,
+      "absorptionSeconds": 6.499999999999993,
+      "remaining": 0.2927374059777247,
+      "pose": {
+        "x": -2.6886091175112647,
+        "z": 1.125307460247495,
+        "heading": -0.4733405121423911
+      },
+      "initialInputs": {
+        "signalLeft": 2.1219448677236405,
+        "signalRight": 28.67750785233267,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.9,
+        "turnRight": 1.1666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 17.5,
+        "feedRight": 22.166666666666668,
+        "goLeft": 2.7277777777777703,
+        "goRight": 0.366666666666667
+      },
+      "pathLength": 3.2029950400329374,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 5176
+    },
+    {
+      "key": "rear/7/0",
+      "name": "rear",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.8706134045697953,
+      "minDistance": 1.8706134045697953,
+      "initialBearing": 3.141592653589793,
+      "contactBearing": 1.2768444830879357,
+      "finalBearing": 0.5121103321968425,
+      "contactSeconds": 14.499999999999964,
+      "absorptionSeconds": 15.89999999999996,
+      "remaining": 0.3093362641308913,
+      "pose": {
+        "x": 0.8009463154011014,
+        "z": -2.3095327541766446,
+        "heading": 3.0719525278500717
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 2,
+        "turnRight": 2,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 16.7,
+        "feedRight": 21.566666666666666,
+        "goLeft": 3.7222222222222254,
+        "goRight": 0.4999999999999997
+      },
+      "pathLength": 5.322688177998028,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4690
+    },
+    {
+      "key": "left/7/1.5707963267948966",
+      "name": "left",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.3281684388867814,
+      "minDistance": 1.3281684388867814,
+      "initialBearing": -0.5235987755982989,
+      "contactBearing": 0.728147898122888,
+      "finalBearing": 0.3558836633393363,
+      "contactSeconds": 4.799999999999999,
+      "absorptionSeconds": 6.199999999999994,
+      "remaining": 0.2719581190969384,
+      "pose": {
+        "x": 2.138038005055854,
+        "z": 2.074744257782835,
+        "heading": 1.2712185991740206
+      },
+      "initialInputs": {
+        "signalLeft": 13.105899259801824,
+        "signalRight": 25.85596111763786,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.3666666666666667,
+        "turnRight": 1.1,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 19.9,
+        "feedRight": 24.266666666666666,
+        "goLeft": 2.955555555555549,
+        "goRight": 0.5333333333333333
+      },
+      "pathLength": 3.1509098943992817,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4689
+    },
+    {
+      "key": "front/7/1.5707963267948966",
+      "name": "front",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.181908404487924,
+      "minDistance": 1.181908404487924,
+      "initialBearing": -1.5707963267948966,
+      "contactBearing": 1.0835254034374562,
+      "finalBearing": 0.009149509617554563,
+      "contactSeconds": 6.199999999999994,
+      "absorptionSeconds": 7.599999999999989,
+      "remaining": 0.30280486364082393,
+      "pose": {
+        "x": -0.5056632108341919,
+        "z": 2.9317246638585885,
+        "heading": 0.43294795209806003
+      },
+      "initialInputs": {
+        "signalLeft": 0,
+        "signalRight": 28.995758367965337,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.5666666666666667,
+        "turnRight": 1.3666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18,
+        "feedRight": 22.1,
+        "goLeft": 3.077777777777771,
+        "goRight": 0.4222222222222227
+      },
+      "pathLength": 3.570575314780535,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4701
+    },
+    {
+      "key": "right/7/1.5707963267948966",
+      "name": "right",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.7693023054747952,
+      "minDistance": 1.7693023054747952,
+      "initialBearing": -2.617993877991494,
+      "contactBearing": 1.180970656889496,
+      "finalBearing": 0.5883459547091121,
+      "contactSeconds": 8.899999999999984,
+      "absorptionSeconds": 10.29999999999998,
+      "remaining": 0.30593991853876146,
+      "pose": {
+        "x": -2.5656322297040735,
+        "z": 0.4758007310076392,
+        "heading": -1.1209866536406483
+      },
+      "initialInputs": {
+        "signalLeft": 13.105899259801824,
+        "signalRight": 25.85596111763786,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.9333333333333333,
+        "turnRight": 1.7333333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.733333333333334,
+        "feedRight": 22.1,
+        "goLeft": 3.1722222222222167,
+        "goRight": 0.46666666666666695
+      },
+      "pathLength": 3.613903930742582,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4661
+    },
+    {
+      "key": "rear/7/1.5707963267948966",
+      "name": "rear",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "active",
+      "initialDistance": 4,
+      "finalDistance": 1.3357096568026037,
+      "minDistance": 1.3357096568026037,
+      "initialBearing": 1.5707963267948966,
+      "contactBearing": 1.022712547998949,
+      "finalBearing": 0.2869094735071507,
+      "contactSeconds": 7.19999999999999,
+      "absorptionSeconds": 8.599999999999985,
+      "remaining": 0.2729903169326835,
+      "pose": {
+        "x": 1.2411778413880792,
+        "z": -3.5064436675282566,
+        "heading": -2.2361860413541423
+      },
+      "initialInputs": {
+        "signalLeft": 28.995758367965337,
+        "signalRight": 0,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.9333333333333333,
+        "turnRight": 0.3333333333333333,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 19.1,
+        "feedRight": 23.033333333333335,
+        "goLeft": 3.399999999999995,
+        "goRight": 0.20555555555555546
+      },
+      "pathLength": 4.398118049261533,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4455
+    },
+    {
+      "key": "held-left/3/-1.0471975511965976",
+      "name": "held-left",
+      "split": "held-out",
+      "seed": 3,
+      "heading": -1.0471975511965976,
+      "mode": "active",
+      "initialDistance": 5,
+      "finalDistance": 1.3966905843561115,
+      "minDistance": 1.3966905843561115,
+      "initialBearing": 1.658062789394613,
+      "contactBearing": 1.06807215484257,
+      "finalBearing": 0.23458433008590562,
+      "contactSeconds": 7.899999999999988,
+      "absorptionSeconds": 9.299999999999983,
+      "remaining": 0.2995854700847405,
+      "pose": {
+        "x": 1.471489549346789,
+        "z": 4.066912265114573,
+        "heading": 1.31555602023228
+      },
+      "initialInputs": {
+        "signalLeft": 27.088333201835823,
+        "signalRight": 0,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 2.6666666666666665,
+        "turnRight": 0.5,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 17.733333333333334,
+        "feedRight": 21.9,
+        "goLeft": 3.6333333333333417,
+        "goRight": 0.24444444444444444
+      },
+      "pathLength": 4.914202757596519,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4535
+    },
+    {
+      "key": "held-right/3/-1.0471975511965976",
+      "name": "held-right",
+      "split": "held-out",
+      "seed": 3,
+      "heading": -1.0471975511965976,
+      "mode": "active",
+      "initialDistance": 5,
+      "finalDistance": 1.538507809214215,
+      "minDistance": 1.538507809214215,
+      "initialBearing": -0.8726646259971649,
+      "contactBearing": 0.8008848766739316,
+      "finalBearing": 0.12521021163890467,
+      "contactSeconds": 8.699999999999985,
+      "absorptionSeconds": 10.09999999999998,
+      "remaining": 0.3012811485834655,
+      "pose": {
+        "x": -3.2240833594123544,
+        "z": -2.149658048464083,
+        "heading": -1.406265911462637
+      },
+      "initialInputs": {
+        "signalLeft": 3.654928383132207,
+        "signalRight": 26.422805716482884,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.4,
+        "turnRight": 1.1,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.466666666666665,
+        "feedRight": 22.4,
+        "goLeft": 3.416666666666664,
+        "goRight": 0.4277777777777782
+      },
+      "pathLength": 4.212611592309225,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4752
+    },
+    {
+      "key": "held-left/11/-1.0471975511965976",
+      "name": "held-left",
+      "split": "held-out",
+      "seed": 11,
+      "heading": -1.0471975511965976,
+      "mode": "active",
+      "initialDistance": 5,
+      "finalDistance": 1.412559606769188,
+      "minDistance": 1.412559606769188,
+      "initialBearing": 1.658062789394613,
+      "contactBearing": 0.6837313935859621,
+      "finalBearing": 0.3078443349560631,
+      "contactSeconds": 8.299999999999986,
+      "absorptionSeconds": 9.699999999999982,
+      "remaining": 0.2900623429797941,
+      "pose": {
+        "x": 1.4672826759529105,
+        "z": 3.9123326689283844,
+        "heading": 1.1327295196361473
+      },
+      "initialInputs": {
+        "signalLeft": 27.088333201835823,
+        "signalRight": 0,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.8666666666666667,
+        "turnRight": 0.6666666666666666,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.266666666666666,
+        "feedRight": 22.566666666666666,
+        "goLeft": 3.305555555555552,
+        "goRight": 0.26666666666666666
+      },
+      "pathLength": 4.566411206227518,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4753
+    },
+    {
+      "key": "held-right/11/-1.0471975511965976",
+      "name": "held-right",
+      "split": "held-out",
+      "seed": 11,
+      "heading": -1.0471975511965976,
+      "mode": "active",
+      "initialDistance": 5,
+      "finalDistance": 1.6619905660191605,
+      "minDistance": 1.6619905660191605,
+      "initialBearing": -0.8726646259971649,
+      "contactBearing": 0.5096912913280176,
+      "finalBearing": 0.21856308830079363,
+      "contactSeconds": 8.199999999999987,
+      "absorptionSeconds": 9.599999999999982,
+      "remaining": 0.29945999630897563,
+      "pose": {
+        "x": -3.0559573060219725,
+        "z": -1.9638473331116104,
+        "heading": -1.6360836286172944
+      },
+      "initialInputs": {
+        "signalLeft": 3.654928383132207,
+        "signalRight": 26.422805716482884,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 1.2666666666666666,
+        "turnRight": 1,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 18.266666666666666,
+        "feedRight": 21.933333333333334,
+        "goLeft": 3.2222222222222174,
+        "goRight": 0.44444444444444464
+      },
+      "pathLength": 3.8868158632629637,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4755
+    },
+    {
+      "key": "left/1/0",
+      "name": "left",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "blocked",
+      "initialDistance": 4,
+      "finalDistance": 4,
+      "minDistance": 4,
+      "initialBearing": 1.0471975511965976,
+      "contactBearing": null,
+      "finalBearing": 1.0471975511965976,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "initialInputs": {
+        "signalLeft": 28.67750785233267,
+        "signalRight": 2.1219448677236405,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 13.4,
+        "turnRight": 0,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 8.45555555555556,
+        "goRight": 0.005555555555555556
+      },
+      "pathLength": 0,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2467
+    },
+    {
+      "key": "front/1/0",
+      "name": "front",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "blocked",
+      "initialDistance": 4,
+      "finalDistance": 4,
+      "minDistance": 4,
+      "initialBearing": 0,
+      "contactBearing": null,
+      "finalBearing": 0,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.6333333333333333,
+        "turnRight": 5.133333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 4.733333333333331,
+        "goRight": 1.055555555555556
+      },
+      "pathLength": 0,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3401
+    },
+    {
+      "key": "right/1/0",
+      "name": "right",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "blocked",
+      "initialDistance": 4,
+      "finalDistance": 4,
+      "minDistance": 4,
+      "initialBearing": -1.0471975511965976,
+      "contactBearing": null,
+      "finalBearing": -1.0471975511965976,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "initialInputs": {
+        "signalLeft": 2.1219448677236405,
+        "signalRight": 28.67750785233267,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.06666666666666667,
+        "turnRight": 5.333333333333333,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 1.9388888888888902,
+        "goRight": 1.0222222222222224
+      },
+      "pathLength": 0,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2601
+    },
+    {
+      "key": "rear/1/0",
+      "name": "rear",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "blocked",
+      "initialDistance": 4,
+      "finalDistance": 4,
+      "minDistance": 4,
+      "initialBearing": 3.141592653589793,
+      "contactBearing": null,
+      "finalBearing": 3.141592653589793,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.6333333333333333,
+        "turnRight": 5.133333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 4.733333333333331,
+        "goRight": 1.055555555555556
+      },
+      "pathLength": 0,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3401
+    },
+    {
+      "key": "left/1/0",
+      "name": "left",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 6.080430133090249,
+      "minDistance": 3.5117766830563206,
+      "initialBearing": 1.0471975511965976,
+      "contactBearing": null,
+      "finalBearing": -2.5136847032902683,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -2.110593296933365,
+        "z": 4.427840036065036,
+        "heading": -1.787964648608309
+      },
+      "initialInputs": {
+        "signalLeft": 15.399726360028156,
+        "signalRight": 15.399726360028156,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.5666666666666667,
+        "turnRight": 1.2,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.583333333333335,
+        "goRight": 0.2388888888888889
+      },
+      "pathLength": 6.5310021419093385,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3226
+    },
+    {
+      "key": "front/1/0",
+      "name": "front",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 4.555013991161518,
+      "minDistance": 3.013793681675017,
+      "initialBearing": 0,
+      "contactBearing": null,
+      "finalBearing": -1.306513593421322,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 0.11723241644893716,
+        "z": -0.553505135630213,
+        "heading": 1.2807737465480096
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.3,
+        "turnRight": 2.1333333333333333,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.6277777777777738,
+        "goRight": 0.45555555555555555
+      },
+      "pathLength": 6.7821278483936505,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3293
+    },
+    {
+      "key": "right/1/0",
+      "name": "right",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 5.791519879595096,
+      "minDistance": 2.3281385037539075,
+      "initialBearing": -1.0471975511965976,
+      "contactBearing": null,
+      "finalBearing": -2.021342452413466,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 2.1172097230514235,
+        "z": 0.45382204712842655,
+        "heading": 0.7207965123534251
+      },
+      "initialInputs": {
+        "signalLeft": 15.399726360028156,
+        "signalRight": 15.399726360028156,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.5,
+        "turnRight": 2.8,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 3.2166666666666655,
+        "goRight": 0.561111111111111
+      },
+      "pathLength": 8.160612936115465,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3307
+    },
+    {
+      "key": "rear/1/0",
+      "name": "rear",
+      "split": "development",
+      "seed": 1,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 7.128920262810973,
+      "minDistance": 4.013439081667798,
+      "initialBearing": 3.141592653589793,
+      "contactBearing": null,
+      "finalBearing": -2.3024070742621907,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -3.776766510938941,
+        "z": 2.0462830594810035,
+        "heading": -1.3975279109292649
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.4,
+        "turnRight": 0.9666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 1.7388888888888934,
+        "goRight": 0.26111111111111107
+      },
+      "pathLength": 4.530958644055762,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3063
+    },
+    {
+      "key": "left/1/1.5707963267948966",
+      "name": "left",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 7.0936521463957165,
+      "minDistance": 2.5905058768417053,
+      "initialBearing": -0.5235987755982989,
+      "contactBearing": null,
+      "finalBearing": -2.6803350146104887,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -2.602377335733249,
+        "z": -1.6766471020079694,
+        "heading": -2.576917060512537
+      },
+      "initialInputs": {
+        "signalLeft": 19.480930188719842,
+        "signalRight": 19.480930188719842,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.5,
+        "turnRight": 2.066666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 3.094444444444441,
+        "goRight": 0.34444444444444444
+      },
+      "pathLength": 7.781300254659675,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3442
+    },
+    {
+      "key": "front/1/1.5707963267948966",
+      "name": "front",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 2.207152488059351,
+      "minDistance": 2.207152488059351,
+      "initialBearing": -1.5707963267948966,
+      "contactBearing": 0.17516128992693303,
+      "finalBearing": 0.2910003597829173,
+      "contactSeconds": 18.499999999999993,
+      "absorptionSeconds": 19.900000000000013,
+      "remaining": 0.32913688361997195,
+      "pose": {
+        "x": 1.7222210918188534,
+        "z": 2.6196099766946808,
+        "heading": -1.186131237545526
+      },
+      "initialInputs": {
+        "signalLeft": 14.497879183982668,
+        "signalRight": 14.497879183982668,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.4,
+        "turnRight": 2.566666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 15.733333333333333,
+        "feedRight": 20.066666666666666,
+        "goLeft": 3.0055555555555533,
+        "goRight": 0.6222222222222219
+      },
+      "pathLength": 4.13292351647793,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4872
+    },
+    {
+      "key": "right/1/1.5707963267948966",
+      "name": "right",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 9.086433177899153,
+      "minDistance": 4.0163922423813485,
+      "initialBearing": -2.617993877991494,
+      "contactBearing": null,
+      "finalBearing": 2.8661315054435628,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 5.621305209567951,
+        "z": 1.8634323390495424,
+        "heading": 1.8612878835166997
+      },
+      "initialInputs": {
+        "signalLeft": 19.480930188719842,
+        "signalRight": 19.480930188719842,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.6,
+        "turnRight": 0.5666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.405555555555554,
+        "goRight": 0.15
+      },
+      "pathLength": 6.059876016918412,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2679
+    },
+    {
+      "key": "rear/1/1.5707963267948966",
+      "name": "rear",
+      "split": "evaluation",
+      "seed": 1,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 6.147497863295885,
+      "minDistance": 3.8127644156253986,
+      "initialBearing": 1.5707963267948966,
+      "contactBearing": null,
+      "finalBearing": -1.736626285112158,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 0.48651866877730104,
+        "z": 2.1282158548927295,
+        "heading": -1.3257425958177338
+      },
+      "initialInputs": {
+        "signalLeft": 14.497879183982668,
+        "signalRight": 14.497879183982668,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.36666666666666664,
+        "turnRight": 1.5,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 1.9055555555555561,
+        "goRight": 0.3333333333333333
+      },
+      "pathLength": 4.936878054697031,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3064
+    },
+    {
+      "key": "left/7/0",
+      "name": "left",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 7.19337867576662,
+      "minDistance": 3.7757197782471867,
+      "initialBearing": 1.0471975511965976,
+      "contactBearing": null,
+      "finalBearing": -2.463612778640374,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -2.4396020130364686,
+        "z": -2.109863774342945,
+        "heading": -2.8569136535936623
+      },
+      "initialInputs": {
+        "signalLeft": 15.399726360028156,
+        "signalRight": 15.399726360028156,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.3,
+        "turnRight": 1.3666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.211111111111108,
+        "goRight": 0.32777777777777783
+      },
+      "pathLength": 5.699979237113024,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3002
+    },
+    {
+      "key": "front/7/0",
+      "name": "front",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 7.824158155878846,
+      "minDistance": 2.731989843393707,
+      "initialBearing": 0,
+      "contactBearing": null,
+      "finalBearing": -2.8467106657968384,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -0.3281534753916585,
+        "z": -3.817273574897699,
+        "heading": 2.8886640301860065
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.5,
+        "turnRight": 1.7333333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 3.2500000000000018,
+        "goRight": 0.29444444444444445
+      },
+      "pathLength": 8.203253039968086,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3188
+    },
+    {
+      "key": "right/7/0",
+      "name": "right",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 1.926308073267995,
+      "minDistance": 1.926308073267995,
+      "initialBearing": -1.0471975511965976,
+      "contactBearing": 0.5068256863504239,
+      "finalBearing": 0.5469319113225357,
+      "contactSeconds": 11.199999999999976,
+      "absorptionSeconds": 12.599999999999971,
+      "remaining": 0.28742819647322737,
+      "pose": {
+        "x": -1.5485986709837685,
+        "z": 1.796256867416675,
+        "heading": -2.011761315992611
+      },
+      "initialInputs": {
+        "signalLeft": 15.399726360028156,
+        "signalRight": 15.399726360028156,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.43333333333333335,
+        "turnRight": 1.5333333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 17.933333333333334,
+        "feedRight": 21.366666666666667,
+        "goLeft": 2.6944444444444406,
+        "goRight": 0.5
+      },
+      "pathLength": 3.196602899945408,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 4905
+    },
+    {
+      "key": "rear/7/0",
+      "name": "rear",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 0,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 8.869297705888716,
+      "minDistance": 4.033587957197405,
+      "initialBearing": 3.141592653589793,
+      "contactBearing": null,
+      "finalBearing": -2.4694095212616882,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -3.8495628138269677,
+        "z": 3.9903258968632467,
+        "heading": -1.121147121094156
+      },
+      "initialInputs": {
+        "signalLeft": 20.862029329156858,
+        "signalRight": 20.862029329156858,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.6,
+        "turnRight": 1.0333333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.2222222222222157,
+        "goRight": 0.2
+      },
+      "pathLength": 5.719682681031799,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2883
+    },
+    {
+      "key": "left/7/1.5707963267948966",
+      "name": "left",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 5.916040766441573,
+      "minDistance": 2.6998566322337947,
+      "initialBearing": -0.5235987755982989,
+      "contactBearing": null,
+      "finalBearing": -2.190708298015338,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -1.5519171544807109,
+        "z": -1.1367330222755405,
+        "heading": -3.0805267255745035
+      },
+      "initialInputs": {
+        "signalLeft": 19.480930188719842,
+        "signalRight": 19.480930188719842,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.36666666666666664,
+        "turnRight": 2.1,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.766666666666658,
+        "goRight": 0.4277777777777777
+      },
+      "pathLength": 7.059525844789422,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3079
+    },
+    {
+      "key": "front/7/1.5707963267948966",
+      "name": "front",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 7.168000769767487,
+      "minDistance": 4,
+      "initialBearing": -1.5707963267948966,
+      "contactBearing": null,
+      "finalBearing": -2.702589294233782,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 5.102983566972992,
+        "z": -1.0338646933137643,
+        "heading": 1.910372660170356
+      },
+      "initialInputs": {
+        "signalLeft": 14.497879183982668,
+        "signalRight": 14.497879183982668,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.6,
+        "turnRight": 0.5666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.1111111111111103,
+        "goRight": 0.1
+      },
+      "pathLength": 5.300479505748476,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2585
+    },
+    {
+      "key": "right/7/1.5707963267948966",
+      "name": "right",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 8.055913548951882,
+      "minDistance": 4.005665223903413,
+      "initialBearing": -2.617993877991494,
+      "contactBearing": null,
+      "finalBearing": -2.6911915175623187,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 4.4933429193692795,
+        "z": 3.2557147719249944,
+        "heading": 0.9638820661215519
+      },
+      "initialInputs": {
+        "signalLeft": 19.480930188719842,
+        "signalRight": 19.480930188719842,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.36666666666666664,
+        "turnRight": 0.6,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.2333333333333307,
+        "goRight": 0.1277777777777778
+      },
+      "pathLength": 5.628699797776532,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2686
+    },
+    {
+      "key": "rear/7/1.5707963267948966",
+      "name": "rear",
+      "split": "evaluation",
+      "seed": 7,
+      "heading": 1.5707963267948966,
+      "mode": "directionless",
+      "initialDistance": 4,
+      "finalDistance": 7.297298656431238,
+      "minDistance": 3.7401352082049373,
+      "initialBearing": 1.5707963267948966,
+      "contactBearing": null,
+      "finalBearing": -3.0827621654692243,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 3.2195202066526796,
+        "z": 2.5486836326171876,
+        "heading": 0.3980976059423197
+      },
+      "initialInputs": {
+        "signalLeft": 14.497879183982668,
+        "signalRight": 14.497879183982668,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.5333333333333333,
+        "turnRight": 1.2333333333333334,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.5944444444444463,
+        "goRight": 0.2611111111111111
+      },
+      "pathLength": 6.539850270989504,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2970
+    },
+    {
+      "key": "held-left/3/-1.0471975511965976",
+      "name": "held-left",
+      "split": "held-out",
+      "seed": 3,
+      "heading": -1.0471975511965976,
+      "mode": "directionless",
+      "initialDistance": 5,
+      "finalDistance": 6.561071989070467,
+      "minDistance": 5,
+      "initialBearing": 1.658062789394613,
+      "contactBearing": null,
+      "finalBearing": 2.3350579204260633,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -3.3978018584546925,
+        "z": 2.1492584480001593,
+        "heading": -1.0654699220604902
+      },
+      "initialInputs": {
+        "signalLeft": 13.544166600917912,
+        "signalRight": 13.544166600917912,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.43333333333333335,
+        "turnRight": 0.5,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 1.5777777777777804,
+        "goRight": 0.11111111111111112
+      },
+      "pathLength": 4.050758216870551,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2303
+    },
+    {
+      "key": "held-right/3/-1.0471975511965976",
+      "name": "held-right",
+      "split": "held-out",
+      "seed": 3,
+      "heading": -1.0471975511965976,
+      "mode": "directionless",
+      "initialDistance": 5,
+      "finalDistance": 7.5179055614761605,
+      "minDistance": 3.3078605547683018,
+      "initialBearing": -0.8726646259971649,
+      "contactBearing": null,
+      "finalBearing": -2.660731387135293,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 2.372533772711281,
+        "z": 0.8433101789797095,
+        "heading": 0.7433967768076103
+      },
+      "initialInputs": {
+        "signalLeft": 15.038867049807546,
+        "signalRight": 15.038867049807546,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.43333333333333335,
+        "turnRight": 2.1333333333333333,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 2.8611111111111054,
+        "goRight": 0.45555555555555555
+      },
+      "pathLength": 7.340662680268374,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3049
+    },
+    {
+      "key": "held-left/11/-1.0471975511965976",
+      "name": "held-left",
+      "split": "held-out",
+      "seed": 11,
+      "heading": -1.0471975511965976,
+      "mode": "directionless",
+      "initialDistance": 5,
+      "finalDistance": 5.84616033126729,
+      "minDistance": 5.0002325525056905,
+      "initialBearing": 1.658062789394613,
+      "contactBearing": null,
+      "finalBearing": 1.7823133798711983,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": -2.9364872121925405,
+        "z": 3.3979876528485287,
+        "heading": -0.3311579729225896
+      },
+      "initialInputs": {
+        "signalLeft": 13.544166600917912,
+        "signalRight": 13.544166600917912,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.9,
+        "turnRight": 0.7333333333333333,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 1.761111111111114,
+        "goRight": 0.19444444444444448
+      },
+      "pathLength": 4.6374200929184335,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 2413
+    },
+    {
+      "key": "held-right/11/-1.0471975511965976",
+      "name": "held-right",
+      "split": "held-out",
+      "seed": 11,
+      "heading": -1.0471975511965976,
+      "mode": "directionless",
+      "initialDistance": 5,
+      "finalDistance": 7.823029738751708,
+      "minDistance": 3.239677818766924,
+      "initialBearing": -0.8726646259971649,
+      "contactBearing": null,
+      "finalBearing": -3.0695023075158776,
+      "contactSeconds": null,
+      "absorptionSeconds": null,
+      "remaining": 1,
+      "pose": {
+        "x": 2.6412554498367466,
+        "z": -4.417188791459397,
+        "heading": 1.8520539570355818
+      },
+      "initialInputs": {
+        "signalLeft": 15.038867049807546,
+        "signalRight": 15.038867049807546,
+        "contactSugar": 0
+      },
+      "meanOutputs": {
+        "turnLeft": 0.36666666666666664,
+        "turnRight": 1.6666666666666667,
+        "forward": 0,
+        "backward": 0,
+        "feedLeft": 0,
+        "feedRight": 0,
+        "goLeft": 3.21666666666667,
+        "goRight": 0.36111111111111116
+      },
+      "pathLength": 8.15243466541117,
+      "maxClockErrorMs": 1.5643308870494366e-10,
+      "cappedInputs": 0,
+      "maxSpikesPerWindow": 3279
+    }
+  ],
+  "errors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4173/models/archon-rigged.glb",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/groups783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/tame783.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/flybrain.wasm",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:4173/neural/flybrain/data/flywire783.fbg.gz",
+      "status": 200
+    }
+  ],
+  "regression": {
+    "near": {
+      "status": "running",
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": -0.03211447014384893
+      },
+      "sources": [
+        {
+          "id": "one",
+          "position": {
+            "x": 0,
+            "y": 3,
+            "z": 2.15
+          },
+          "strength": 1,
+          "remaining": 0.7413403265640841
+        }
+      ],
+      "command": {
+        "speed": 0,
+        "yaw": 0,
+        "neuralSpeed": 0,
+        "neuralYaw": -0.5657615980714522,
+        "assistYaw": 0,
+        "feed": 0.8193017432308747,
+        "feedHz": 65.54413945846997,
+        "phase": "absorb",
+        "targetId": "one",
+        "reason": "MN9-maintained",
+        "filtered": {
+          "turnLeft": 22.043375721196025,
+          "turnRight": 47.75981199717112,
+          "forward": 0,
+          "backward": 0,
+          "feedLeft": 56.412978941083246,
+          "feedRight": 74.67529997585669,
+          "goLeft": 3.6202394720799216,
+          "goRight": 13.840628207077492
+        }
+      }
+    },
+    "noStimulus": {
+      "status": "running",
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "sources": [],
+      "command": {
+        "speed": 0,
+        "yaw": 0,
+        "neuralSpeed": 0,
+        "neuralYaw": 0,
+        "assistYaw": 0,
+        "feed": 0,
+        "feedHz": 0,
+        "phase": "idle",
+        "targetId": null,
+        "reason": "no-target",
+        "filtered": {
+          "turnLeft": 0,
+          "turnRight": 0,
+          "forward": 0,
+          "backward": 0,
+          "feedLeft": 0,
+          "feedRight": 0,
+          "goLeft": 0,
+          "goRight": 0
+        }
+      }
+    },
+    "feedback": {
+      "status": "running",
+      "pose": {
+        "x": 1.2173536697012715,
+        "z": 2.041820591194113,
+        "heading": 0.7575879797082088
+      },
+      "sources": [
+        {
+          "id": "one",
+          "position": {
+            "x": 3.4641016151377544,
+            "y": 2.4,
+            "z": 2.0000000000000004
+          },
+          "strength": 1,
+          "remaining": 0.6552322138342205
+        }
+      ],
+      "command": {
+        "speed": 0,
+        "yaw": 0,
+        "neuralSpeed": 0.2833570779220695,
+        "neuralYaw": 0.00012700864336217342,
+        "assistYaw": 0,
+        "feed": 0.7087886009376947,
+        "feedHz": 56.70308807501557,
+        "phase": "absorb",
+        "targetId": "one",
+        "reason": "MN9-maintained",
+        "filtered": {
+          "turnLeft": 0.0016985938510101287,
+          "turnRight": 0.0005439698204449158,
+          "forward": 0,
+          "backward": 0,
+          "feedLeft": 48.71162107442792,
+          "feedRight": 64.69455507560323,
+          "goLeft": 3.4002849350648336,
+          "goRight": 0.8130187145745928
+        }
+      }
+    },
+    "weakContact": {
+      "status": "running",
+      "pose": {
+        "x": 1.2184270283616367,
+        "z": 2.0429553738070623,
+        "heading": 0.7575884577642455
+      },
+      "sources": [
+        {
+          "id": "one",
+          "position": {
+            "x": 3.4641016151377544,
+            "y": 2.4,
+            "z": 2.0000000000000004
+          },
+          "strength": 0.02,
+          "remaining": 0.6422383785765562
+        }
+      ],
+      "command": {
+        "speed": 6.721112996007721e-7,
+        "yaw": 2.0570279138535244e-10,
+        "neuralSpeed": 6.721112996007721e-7,
+        "neuralYaw": 2.0570279138535244e-10,
+        "assistYaw": 0,
+        "feed": 0.0000017235568743280408,
+        "feedHz": 0.00013788454994624326,
+        "phase": "idle",
+        "targetId": null,
+        "reason": "waiting-for-MN9",
+        "filtered": {
+          "turnLeft": 2.7510371525379286e-9,
+          "turnRight": 8.810117763074522e-10,
+          "forward": 0,
+          "backward": 0,
+          "feedLeft": 0.0001095921254976432,
+          "feedRight": 0.0001661769743948433,
+          "goLeft": 0.000008065335595209266,
+          "goRight": 0.0000013167625022151321
+        }
+      }
+    },
+    "removal": {
+      "status": "running",
+      "pose": {
+        "x": 1.23260292467606,
+        "z": 2.057942494169189,
+        "heading": 0.7575884577748067
+      },
+      "sources": [],
+      "command": {
+        "speed": 0.00016751644101757642,
+        "yaw": 0,
+        "neuralSpeed": 0.00016751644101757642,
+        "neuralYaw": 0,
+        "assistYaw": 0,
+        "feed": 0.0003769119922895468,
+        "feedHz": 0.030152959383163744,
+        "phase": "release",
+        "targetId": null,
+        "reason": "no-target",
+        "filtered": {
+          "turnLeft": 0,
+          "turnRight": 0,
+          "forward": 0,
+          "backward": 0,
+          "feedLeft": 0.0361835512597965,
+          "feedRight": 0.02412236750653099,
+          "goLeft": 0,
+          "goRight": 0.002010197292210917
+        }
+      }
+    },
+    "failure": {
+      "status": "error",
+      "pose": {
+        "x": 1.2173536697012715,
+        "z": 2.041820591194113,
+        "heading": 0.7575879797082088
+      },
+      "sources": [
+        {
+          "id": "one",
+          "position": {
+            "x": 3.4641016151377544,
+            "y": 2.4,
+            "z": 2.0000000000000004
+          },
+          "strength": 1,
+          "remaining": 0.8231069055315622
+        }
+      ],
+      "command": {
+        "speed": 0,
+        "yaw": 0,
+        "neuralSpeed": 0,
+        "neuralYaw": 0,
+        "assistYaw": 0,
+        "feed": 0,
+        "phase": "release",
+        "targetId": null,
+        "reason": "neural-failure"
+      }
+    }
+  },
+  "visible": {
+    "body": {
+      "meshCount": 1,
+      "joints": 24,
+      "source": "/models/archon-rigged.glb",
+      "height": 2.9,
+      "width": 2.4028702865820057,
+      "animations": 1,
+      "armCalibration": {
+        "correctedVertices": 43860,
+        "originalLengths": [
+          0.2677759145067101,
+          0.5978276979828641
+        ],
+        "calibratedLengths": [
+          0.32264531609803365,
+          0.42159791484098347
+        ]
+      },
+      "eyeCount": 2
+    },
+    "breath": 0.9973094547325093,
+    "eyeParent": "Head",
+    "eyeSurfaceGap": 0.008000001170352522,
+    "layers": [
+      "BodyMesh",
+      "InnerGlow",
+      "PsionicShell",
+      "FilamentLayer",
+      "SparkParticles",
+      "RedSatelliteSystem",
+      "ElectricArcs",
+      "AbsorptionEffect"
+    ],
+    "satellites": [
+      [
+        -1.0426917087879386,
+        0.4131548140328168,
+        -1.9241629474354582
+      ],
+      [
+        1.239471867029926,
+        1.9156783698642057,
+        -1.2633916905041171
+      ],
+      [
+        1.845363588150918,
+        -1.701336808535094,
+        0.3414726526112614
+      ]
+    ],
+    "sparkCount": 48,
+    "gasTime": 124.94640000000608,
+    "gasEnergy": 0.5,
+    "visualState": {
+      "energy": 0.5
+    },
+    "interaction": {
+      "phase": "absorb",
+      "pose": 0.5307676270893831,
+      "charge": 0.4498202835232783,
+      "flow": 0.05576325967764775,
+      "windup": 0,
+      "extension": 0.9823035730861468,
+      "impulse": 0.9332742638063959,
+      "intensity": 0.817358777398192,
+      "target": [
+        3.307984160022002,
+        2.4270403343938214,
+        2.0067600835984556
+      ],
+      "source": [
+        3.4641016151377544,
+        2.4,
+        2.0000000000000004
+      ],
+      "joints": {
+        "Spine": [
+          0.058217311954874784,
+          0.05496024317184677,
+          -0.06353265806393524,
+          0.9947631920863789
+        ],
+        "Head": [
+          0.40905885128017244,
+          0.013194740820617432,
+          -0.049602947824902904,
+          0.9110632813208435
+        ],
+        "LeftShoulder": [
+          0.5156033028980413,
+          0.4828575788055151,
+          -0.4884307140502853,
+          0.5122862145046561
+        ],
+        "RightShoulder": [
+          0.4993576926655366,
+          -0.489331573460271,
+          0.4766342750944377,
+          0.5329318583896088
+        ],
+        "LeftArm": [
+          0.3339024002022581,
+          0.3058399024460928,
+          0.4286037113046326,
+          0.7818282763135052
+        ],
+        "RightArm": [
+          0.3297157835501559,
+          -0.21584637796328007,
+          -0.4550649482633801,
+          0.7985149932778463
+        ],
+        "LeftForeArm": [
+          -0.2823591416187218,
+          -0.2811353454673127,
+          -0.14488626248371925,
+          0.905673322545987
+        ],
+        "RightForeArm": [
+          -0.13126941447312152,
+          -0.04316646873037122,
+          -0.1953220530320567,
+          0.9709553460527475
+        ],
+        "LeftHand": [
+          -0.10027759794937066,
+          0.039121360874646724,
+          0.32012559881833197,
+          0.9412237830899322
+        ],
+        "RightHand": [
+          0.016754703400800708,
+          -0.06740175039588484,
+          -0.20826330079149247,
+          0.9756125454588733
+        ],
+        "LeftUpLeg": [
+          -0.9817628677808797,
+          -0.12589813735838318,
+          -0.1393452865426605,
+          0.029567238198661337
+        ],
+        "RightUpLeg": [
+          0.9471273343588993,
+          -0.16051665803694612,
+          0.27431703397255264,
+          0.04398158563942073
+        ],
+        "LeftLeg": [
+          0.2957843076364647,
+          0.4023338258575086,
+          0.52591873454972,
+          0.6885118884786944
+        ],
+        "RightLeg": [
+          0.5972737522916477,
+          -0.15980316740592507,
+          -0.20026553005338293,
+          0.760013638024297
+        ]
+      },
+      "hands": [
+        [
+          1.9714585856376041,
+          2.7301463678237257,
+          1.5229085059976053
+        ],
+        [
+          1.5632478327838257,
+          2.6183189550258774,
+          2.7579301600551833
+        ]
+      ],
+      "sockets": [
+        {
+          "parent": "LeftHand",
+          "local": [
+            0,
+            8,
+            2
+          ]
+        },
+        {
+          "parent": "RightHand",
+          "local": [
+            0,
+            8,
+            2
+          ]
+        }
+      ],
+      "forward": [
+        0.33439277986958094,
+        -0.9073490693933786,
+        0.2557503199930952
+      ],
+      "connection": {
+        "strength": 0.04557858975386006,
+        "starts": [
+          [
+            3.464101640282326,
+            2.4000000024941555,
+            1.999999998015841
+          ],
+          [
+            3.464101640282326,
+            2.4000000024941555,
+            1.999999998015841
+          ]
+        ],
+        "ends": [
+          [
+            1.9714586117846302,
+            2.730146369224488,
+            1.5229084993428788
+          ],
+          [
+            1.5632478275877766,
+            2.61831894542843,
+            2.757930165035208
+          ]
+        ],
+        "packetProgress": 0.08856000000243114,
+        "frontFacing": [
+          true,
+          true
+        ],
+        "packetDistanceToHand": 1.4630463561772944
+      }
+    },
+    "parameters": {
+      "shellRadius": 1.85,
+      "shellOpacity": 0.7,
+      "pulseSpeed": 0.65,
+      "filamentIntensity": 0.75,
+      "sparkDensity": 48,
+      "satelliteSpeed": 6.3,
+      "satelliteOrbitRadius": 0.42,
+      "rimIntensity": 0.8
+    },
+    "camera": "fixed",
+    "drawCalls": 68,
+    "time": 124.94640000000608,
+    "paused": false,
+    "effectsVisible": true,
+    "previewVisible": false
+  }
+}

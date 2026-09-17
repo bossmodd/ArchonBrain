@@ -1,0 +1,485 @@
+.observation-ui.workbench-ui { --panel: #101619; --brass: #8e7852; --active: #67bdbb; --ink: #d6dcd9;
+  --muted: #99aaa9; --edge: #8e78524f; --side: clamp(240px, 18vw, 270px); color: var(--ink); font-size: 12px;
+  background: #080e12; }
+.observation-ui.workbench-ui[data-theme="plain"] { --brass: #6a7e91; --active: #9ed9ec; --edge: #637c903b; }
+.observation-ui.workbench-ui button { backdrop-filter: none; border-radius: 2px; border-color: var(--edge); background: #182125; color: var(--ink); min-height: 34px; padding: 7px 10px; }
+.observation-ui.workbench-ui button:hover { background: #263033; }
+.observation-ui.workbench-ui button:active { background: #101a1d; }
+.observation-ui.workbench-ui button[aria-pressed="true"] { border-color: var(--active); color: #b9e5e0; background: #203234; }
+.observation-ui.workbench-ui button[aria-expanded="true"] { border-color: var(--active); color: #b9e5e0; background: #203234; }
+.observation-ui.workbench-ui button:focus-visible { outline: 2px solid var(--active); outline-offset: 2px; }
+.observation-ui.workbench-ui input:focus-visible { outline: 2px solid var(--active); outline-offset: 2px; }
+.observation-ui.workbench-ui summary:focus-visible { outline: 2px solid var(--active); outline-offset: 2px; }
+.observation-ui.workbench-ui button:disabled { opacity: .55; }
+.observation-ui.workbench-ui .viewer-header { border-bottom: 1px solid var(--edge); background: var(--panel); pointer-events: auto; z-index: 5; }
+.observation-ui.workbench-ui .wordmark { gap: 8px; }
+.observation-ui.workbench-ui .mark { color: var(--brass); font-size: 30px; }
+.observation-ui.workbench-ui h1 { font-size: 20px; }
+.observation-ui.workbench-ui nav { gap: 4px; }
+.observation-ui.workbench-ui nav button { font-size: 11px; padding: 7px 8px; }
+.observation-ui.workbench-ui #experiment-files { border: 0; padding: 0; display: grid; grid-template-columns: minmax(130px,1fr) auto; gap: 3px 12px; align-items: center; min-width: 0; }
+.observation-ui.workbench-ui #experiment-files > label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.observation-ui.workbench-ui #experiment-name { margin: 0; padding: 8px 9px; background: #0c1417; color: var(--ink); border-color: var(--edge); font-size: 13px; min-width: 0; height: 35px; }
+.observation-ui.workbench-ui .experiment-actions { gap: 5px; }
+.observation-ui.workbench-ui .experiment-actions button { flex: none; white-space: nowrap; }
+.observation-ui.workbench-ui #experiment-current { white-space: normal; font-size: 10px; margin: 0; grid-column: 1/-1; line-height: 1.4; color: var(--muted); }
+.observation-ui.workbench-ui #experiment-status { font-size: 10px; line-height: 1.4; margin: 0; grid-column: 1/-1; }
+.observation-ui.workbench-ui #experiment-help { margin: 0; padding: 14px; font-size: 11px; color: var(--muted); line-height: 1.6; }
+.observation-ui.workbench-ui #neural-panel { pointer-events: auto; background: var(--panel); }
+.observation-ui.workbench-ui #environment-panel { pointer-events: auto; background: var(--panel); }
+.observation-ui.workbench-ui #neural-panel { border-right: 1px solid var(--edge); }
+.observation-ui.workbench-ui #environment-panel { border-left: 1px solid var(--edge); }
+.observation-ui.workbench-ui h2 { margin: 0 0 19px; font-size: 15px; font-weight: 500; color: var(--ink); }
+.observation-ui.workbench-ui .scene-surface canvas { pointer-events: auto; position: absolute; inset: 0; }
+.observation-ui.workbench-ui .source-handles { position: absolute; inset: 0; overflow: hidden; }
+.observation-ui.workbench-ui .camera-tools { position: absolute; inset: 12px 12px auto auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px; max-width: calc(100% - 24px); }
+.observation-ui.workbench-ui .camera-tools button { font-size: 10px; padding: 5px 7px; min-height: 30px; background: #10191ee8; }
+.observation-ui.workbench-ui #interaction-state { top: 51px; right: 16px; color: var(--active); font-size: 11px; }
+.observation-ui.workbench-ui .layer-switch { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); border-radius: 3px; backdrop-filter: none; padding: 2px; }
+.observation-ui.workbench-ui .layer-switch button { min-height: 28px; padding: 4px 9px; font-size: 11px; }
+.observation-ui.workbench-ui #status { position: absolute; bottom: 15px; left: 14px; font-size: 10px; }
+.observation-ui.workbench-ui #status[role="alert"] { top: 50%; bottom: auto; left: 50%; font-size: 13px; width: 90%; z-index: 10; }
+.observation-ui.workbench-ui #tuning-panel { z-index: 10; top: 112px; right: 12px; bottom: 78px; width: calc(var(--side) - 24px); max-height: none; background: #10191ef7; border-color: var(--edge); border-radius: 3px; backdrop-filter: none; }
+.observation-ui.workbench-ui #tuning-panel .lil-gui.lil-root { width: 100%; }
+.observation-ui.workbench-ui .viewer-footer { background: var(--panel); border-top: 1px solid var(--edge); pointer-events: auto; }
+.observation-ui.workbench-ui #pause { margin: 0; min-width: 96px; border-color: var(--brass); }
+.observation-ui.workbench-ui #restart { min-height: 36px; font-size: 12px; }
+.observation-ui.workbench-ui .view-note { flex: 1; width: auto; margin-left: auto; justify-content: flex-end; flex-wrap: wrap; font-size: 10px; gap: 7px; }
+.observation-ui.workbench-ui .live-dot { background: var(--active); box-shadow: none; }
+.observation-ui.workbench-ui #source-editor { border: 0; border-top: 1px solid var(--edge); background: transparent; border-radius: 0; font-size: 11px; }
+.observation-ui.workbench-ui .source-toolbar { flex-wrap: wrap; gap: 10px; }
+.observation-ui.workbench-ui .source-toolbar strong { font-size: 14px; }
+.observation-ui.workbench-ui .source-choices { margin-left: auto; gap: 4px; }
+.observation-ui.workbench-ui .source-choices button { min-width: 34px; font-size: 12px; }
+.observation-ui.workbench-ui #delete-source { order: 3; margin: 3px 0 0; width: 100%; font-size: 11px; }
+.observation-ui.workbench-ui .source-strength { flex-wrap: wrap; gap: 3px; margin: 15px 0; }
+.observation-ui.workbench-ui .source-strength input { flex: 1 0 75%; order: 1; min-height: 28px; accent-color: var(--active); }
+.observation-ui.workbench-ui .source-strength output { margin-left: auto; text-align: right; }
+.observation-ui.workbench-ui #source-detail { overflow-wrap: anywhere; }
+.observation-ui.workbench-ui #source-hint { margin: 10px 0; }
+.observation-ui.workbench-ui #source-editor small { font-size: 10px; color: var(--muted); }
+.observation-ui.workbench-ui #environment-empty { color: var(--muted); line-height: 1.7; font-size: 12px; }
+.observation-ui.workbench-ui #runtime-details { margin-top: 20px; border-top: 1px solid var(--edge); padding-top: 12px; }
+.observation-ui.workbench-ui summary { cursor: pointer; font-size: 11px; color: var(--muted); padding: 5px 0; }
+.observation-ui.workbench-ui #neural-diagnostics { position: static; inset: auto; max-width: none; max-height: none; border: 0; background: none; padding: 10px 0; font-size: 10px; line-height: 1.7; font-family: inherit; white-space: pre-wrap; overflow-wrap: anywhere; }
+.observation-ui.workbench-ui.hidden-ui { opacity: 1; }
+.observation-ui.workbench-ui.hidden-ui > :not(.scene-surface) { visibility: hidden; }
+.observation-ui.workbench-ui.hidden-ui .scene-surface > :not(canvas) { visibility: hidden; }
+.observation-ui.workbench-ui .lil-gui { --title-background-color: #172125; --text-color: #c5d3d0; --widget-color: #263238; --number-color: #9ccfcb; --hover-color: #334045; }
+.observation-ui.workbench-ui #neural-flow { font-size: 11px; line-height: 1.55; }
+.observation-ui.workbench-ui #neural-flow section { border-top: 1px solid var(--edge); padding: 15px 0 2px; margin-top: 16px; }
+.observation-ui.workbench-ui #neural-flow h3 { font-size: 12px; font-weight: 500; margin: 0 0 12px; display: flex; justify-content: space-between; }
+.observation-ui.workbench-ui #neural-flow small { font-size: 10px; color: var(--muted); font-weight: 400; }
+.observation-ui.workbench-ui #neural-flow p { color: var(--muted); margin: 7px 0; white-space: pre-line; overflow-wrap: anywhere; }
+.observation-ui.workbench-ui #model-state { white-space: pre-line; color: var(--active); }
+.observation-ui.workbench-ui #sample-time { font-size: 10px; }
+.observation-ui.workbench-ui .signal-line { display: grid; grid-template-columns: 1fr auto; margin: 9px 0; gap: 2px; }
+.observation-ui.workbench-ui .signal-line output { font-variant-numeric: tabular-nums; }
+.observation-ui.workbench-ui dd { font-variant-numeric: tabular-nums; }
+.observation-ui.workbench-ui meter { grid-column: 1/-1; width: 100%; height: 5px; border: 0; background: #253133; }
+.observation-ui.workbench-ui meter::-webkit-meter-bar { background: #253133; border: none; border-radius: 0; }
+.observation-ui.workbench-ui meter::-webkit-meter-optimum-value { background: var(--active); }
+.observation-ui.workbench-ui dl { display: grid; grid-template-columns: 1fr auto; gap: 9px 8px; margin: 0; }
+.observation-ui.workbench-ui dt { color: var(--muted); }
+.observation-ui.workbench-ui dd { margin: 0; text-align: right; }
+.observation-ui.workbench-ui #neural-gate { font-size: 10px; margin-top: 12px !important; }
+.observation-ui.workbench-ui #action-state { margin-top: 14px; overflow-wrap: anywhere; }
+.observation-ui.workbench-ui #action-reason { font-size: 10px; }
+.observation-ui.workbench-ui #action-transition { font-size: 10px; }
+.observation-ui.workbench-ui #run-summary { color: var(--ink); }
+.observation-ui.workbench-ui #neural-status { display: none; }
+.observation-ui.workbench-ui #environment-map { display: block; width: 100%; aspect-ratio: 1; background: #0b1115; border: 1px solid var(--edge); }
+.observation-ui.workbench-ui .map-floor { fill: none; stroke: #8e785273; stroke-width: .15; }
+.observation-ui.workbench-ui .map-axes { stroke: #72817c36; stroke-width: .12; }
+.observation-ui.workbench-ui #map-archon { fill: var(--active); }
+.observation-ui.workbench-ui .map-source { cursor: pointer; outline: none; }
+.observation-ui.workbench-ui .map-source rect { fill: #233033; stroke: var(--brass); stroke-width: .18; }
+.observation-ui.workbench-ui .map-source text { fill: var(--ink); font-size: 1.6px; pointer-events: none; }
+.observation-ui.workbench-ui .map-source[aria-pressed="true"] rect { stroke: var(--active); fill: #2c5353; }
+.observation-ui.workbench-ui .map-source:focus-visible rect { stroke: #e0ece7; stroke-width: .4; }
+.observation-ui.workbench-ui .map-source[aria-disabled="true"] { opacity: .55; cursor: default; }
+.observation-ui.workbench-ui .map-hit { fill: transparent; }
+.observation-ui.workbench-ui .map-connected { fill: none; stroke: var(--brass); stroke-width: .23; stroke-dasharray: .65 .4; visibility: hidden; }
+.observation-ui.workbench-ui .map-source[data-linked="true"] .map-connected { visibility: visible; }
+.observation-ui.workbench-ui .map-caption { margin: 8px 0; font-size: 10px; color: var(--muted); line-height: 1.5; white-space: pre-line; }
+.observation-ui.workbench-ui .map-legend { margin: 8px 0; font-size: 10px; color: var(--muted); line-height: 1.5; white-space: pre-line; }
+.observation-ui.workbench-ui #source-contributions { margin: 8px 0; font-size: 10px; color: var(--muted); line-height: 1.5; white-space: pre-line; }
+.observation-ui.workbench-ui #source-contributions { margin-bottom: 20px; }
+.observation-ui.workbench-ui #source-connection { color: #bbaa84; margin-top: 7px; overflow-wrap: anywhere; }
+.observation-ui.workbench-ui[data-theme="brass"] #pause { border-top-right-radius: 0; background-image: linear-gradient(225deg, var(--panel) 3px, var(--brass) 3px, var(--brass) 4px, transparent 4px);
+  background-position: right top; background-size: 7px 7px; background-repeat: no-repeat; }
+.observation-ui.workbench-ui[data-theme="brass"] #restart { border-top-right-radius: 0; background-image: linear-gradient(225deg, var(--panel) 3px, var(--brass) 3px, var(--brass) 4px, transparent 4px);
+  background-position: right top; background-size: 7px 7px; background-repeat: no-repeat; }
+.observation-ui.workbench-ui[data-theme="brass"] .source-choices button { border-top-right-radius: 0; background-image: linear-gradient(225deg, var(--panel) 3px, var(--brass) 3px, var(--brass) 4px, transparent 4px);
+  background-position: right top; background-size: 7px 7px; background-repeat: no-repeat; }
+.observation-ui.workbench-ui #neural-flow section { padding-top: 12px; margin-top: 12px; }
+.observation-ui.workbench-ui #neural-flow dl { gap: 7px 8px; }
+.observation-ui.workbench-ui #experiment-guide { pointer-events: auto; }
+.observation-ui.workbench-ui #experiment-guide [hidden] { display: none; }
+.observation-ui.workbench-ui #experiment-status[hidden] { display: none; }
+.observation-ui.workbench-ui #signal-feedback { position: static !important; margin-top: 12px; }
+.observation-ui.workbench-ui #output-raw { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 11px; }
+.observation-ui.workbench-ui #environment-details { margin-top: 18px; border-top: 1px solid var(--edge); padding-top: 10px; }
+.observation-ui.workbench-ui #environment-details p { color: var(--muted); font-size: 11px; white-space: pre-line; }
+.observation-ui.workbench-ui #environment-details small { color: var(--muted); font-size: 11px; white-space: pre-line; }
+.observation-ui.workbench-ui #guide-toggle { font-size: 10px; min-height: 28px; padding: 4px 8px; background: #101619ed; }
+.observation-ui.workbench-ui #guide-body { background: #101619f5; border: 1px solid var(--edge); border-left: 2px solid var(--active); }
+.observation-ui.workbench-ui #guide-body h2 { font-size: 16px; margin: 0 0 7px; }
+.observation-ui.workbench-ui #guide-body p { font-size: 11px; color: var(--muted); line-height: 1.55; margin: 7px 0; }
+.observation-ui.workbench-ui #guide-status:empty { display: none; }
+.observation-ui.workbench-ui .guide-actions { display: flex; gap: 6px; margin-top: 12px; flex-wrap: wrap; }
+.observation-ui.workbench-ui .guide-actions button { font-size: 11px; min-height: 34px; }
+.observation-ui.workbench-ui #guide-start { color: #b9e5e0; border-color: var(--active); }
+.observation-ui.workbench-ui #guide-comparison { border-top: 1px solid var(--edge); padding-top: 5px; }
+.observation-ui.workbench-ui #guide-comparison small { display: block; font-size: 9px; color: var(--muted); margin-top: 8px; }
+.observation-ui.workbench-ui #guide-connected { border-color: var(--active); }
+.observation-ui.workbench-ui #guide-blocked { border-color: var(--brass); }
+.observation-ui.workbench-ui #signal-feedback { position: absolute; top: 65px; left: 14px; max-width: calc(100% - 28px); padding: 7px 10px; background: #101619dd; border-left: 2px solid var(--brass); pointer-events: none; }
+.observation-ui.workbench-ui .feedback-path { display: flex; gap: 12px; color: #718787; font-size: 10px; }
+.observation-ui.workbench-ui .feedback-path span + span::before { content: '›'; margin-right: 12px; color: #718787; }
+.observation-ui.workbench-ui .feedback-path [data-confirmed="true"] { color: var(--active); }
+.observation-ui.workbench-ui .feedback-path [data-blocked="true"] { color: #e2b57b; }
+.observation-ui.workbench-ui #feedback-result { font-size: 10px; color: var(--ink); margin-top: 4px; }
+.observation-ui.workbench-ui #neural-flow.input-received .sensory-input { border-top-color: #e2b57b; }
+.observation-ui.workbench-ui #neural-flow.output-received .motor-output { border-top-color: var(--active); }
+.observation-ui.workbench-ui #neural-flow.output-received .action-summary { border-top-color: var(--active); }
+.observation-ui.workbench-ui #neural-panel > h2 { margin-bottom: 8px; font-size: 17px; }
+.observation-ui.workbench-ui .brain-heading { display: flex; align-items: center; justify-content: space-between; color: var(--muted); font-size: 10px; }
+.observation-ui.workbench-ui #model-state { font-size: 10px; text-transform: capitalize; padding: 1px 6px; border: 1px solid #67bdbb42; border-radius: 2px; }
+.observation-ui.workbench-ui #model-state[data-state="off"] { color: var(--muted); border-color: var(--edge); }
+.observation-ui.workbench-ui #brain-atlas { background: #0b1115; }
+.observation-ui.workbench-ui #brain-atlas text { fill: #879b9e; font-size: 16px; }
+.observation-ui.workbench-ui .input-neuron { fill: #e2b57b; }
+.observation-ui.workbench-ui .motor-neuron { fill: #b0fff3; stroke: #6eddd1; stroke-width: .7; }
+.observation-ui.workbench-ui #atlas-caption { margin-top: 7px; text-align: center; color: var(--muted); font-size: 10px; }
+.observation-ui.workbench-ui .brain-legend { display: flex; justify-content: center; gap: 16px; font-size: 9px; color: var(--muted); margin-top: 3px; }
+.observation-ui.workbench-ui .brain-legend span::before { content: ''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #e2b57b; vertical-align: 2px; margin-right: 5px; }
+.observation-ui.workbench-ui .brain-legend span + span::before { background: #a0f2e2; }
+.observation-ui.workbench-ui .spike-strip { display: flex; align-items: center; gap: 16px; margin: 11px 0 0; }
+.observation-ui.workbench-ui .spike-strip > div { flex: 0 0 auto; }
+.observation-ui.workbench-ui #brain-spikes { display: block; font-size: 21px; line-height: 1.1; font-variant-numeric: tabular-nums; font-weight: 400; }
+.observation-ui.workbench-ui .spike-strip svg { flex: 1; min-width: 0; height: 32px; border-bottom: 1px solid #40515766; }
+.observation-ui.workbench-ui #spike-trace { fill: none; stroke: var(--active); stroke-width: 1; vector-effect: non-scaling-stroke; }
+.observation-ui.workbench-ui .spike-strip small { font-size: 9px !important; }
+.observation-ui.workbench-ui #neural-flow section { padding-top: 10px; margin-top: 11px; }
+.observation-ui.workbench-ui #neural-flow h3 { margin-bottom: 7px; font-size: 11px; }
+.observation-ui.workbench-ui .signal-line { margin: 6px 0; font-size: 10px; gap: 1px; }
+.observation-ui.workbench-ui meter { height: 3px; }
+.observation-ui.workbench-ui .output-line { display: grid; grid-template-columns: 1fr auto; gap: 2px; margin-top: 7px; font-size: 10px; }
+.observation-ui.workbench-ui .output-line[hidden] { display: none; }
+.observation-ui.workbench-ui .output-line small { margin-left: 4px; font-size: 9px !important; }
+.observation-ui.workbench-ui .paired-bars { display: flex; grid-column: 1/-1; gap: 3px; height: 3px; }
+.observation-ui.workbench-ui .paired-bars i { flex: 1; background: linear-gradient(to right,var(--active) calc(var(--amount,0) * 100%),#253133 0); }
+.observation-ui.workbench-ui #action-state { margin: 0 0 9px; font-size: 14px; font-weight: 500; }
+.observation-ui.workbench-ui .action-values { display: grid; grid-template-columns: 1fr 1fr; }
+.observation-ui.workbench-ui .action-values output { display: block; font-size: 19px; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.observation-ui.workbench-ui .control-badges { display: flex; gap: 12px; margin-top: 9px; font-size: 9px; color: var(--muted); }
+.observation-ui.workbench-ui #gate-badge { color: var(--active); }
+.observation-ui.workbench-ui #gate-badge[data-blocked="true"] { color: #e2b57b; }
+.observation-ui.workbench-ui #neural-detail { margin-top: 12px; border-top: 1px solid var(--edge); padding-top: 5px; }
+.observation-ui.workbench-ui #runtime-details { margin-top: 4px; padding-top: 0; border-top: 0; }
+.observation-ui.workbench-ui #neural-flow #neural-detail > small { display: block; margin-top: 12px; }
+@media (max-width: 760px) {.observation-ui.workbench-ui .brain-heading { grid-column: 1/-1; }
+.observation-ui.workbench-ui #brain-activity { grid-column: 1; grid-row: 2/4; }
+.observation-ui.workbench-ui #atlas-caption { font-size: 8px; }
+.observation-ui.workbench-ui .brain-legend { gap: 6px; font-size: 8px; }
+.observation-ui.workbench-ui .spike-strip { display: block; }
+.observation-ui.workbench-ui .spike-strip svg { width: 100%; }
+.observation-ui.workbench-ui #neural-flow > section { grid-column: 2; }
+.observation-ui.workbench-ui #neural-flow > .action-summary { grid-column: 1/-1; }
+.observation-ui.workbench-ui #neural-detail { grid-column: 1/-1; }
+.observation-ui.workbench-ui #environment-panel #source-editor { border: 0; padding-top: 0; }
+.observation-ui.workbench-ui #environment-panel h2 { margin-bottom: 12px; }
+}
+@media (max-width: 1199px) {.observation-ui.workbench-ui #experiment-files { grid-column: 1/-1; grid-row: 2; }
+.observation-ui.workbench-ui #tune { grid-column: 3; grid-row: 1; }
+.observation-ui.workbench-ui nav { justify-content: center; }
+.observation-ui.workbench-ui #panel-tabs { z-index: 4; }
+.observation-ui.workbench-ui #panel-tabs button { background: #10191ef5; font-size: 11px; }
+.observation-ui.workbench-ui #show-environment { display: none; }
+.observation-ui.workbench-ui #neural-panel { z-index: 4; }
+.observation-ui.workbench-ui .camera-tools { top: 12px; max-width: calc(100% - 95px); }
+.observation-ui.workbench-ui #tuning-panel { top: 176px; width: 226px; }
+}
+@media (max-width: 760px) {.observation-ui.workbench-ui .wordmark { gap: 4px; }
+.observation-ui.workbench-ui h1 { font-size: 16px; }
+.observation-ui.workbench-ui .mark { font-size: 24px; }
+.observation-ui.workbench-ui nav { flex: initial; flex-wrap: nowrap; gap: 3px; }
+.observation-ui.workbench-ui nav button { padding: 6px; font-size: 10px; min-height: 34px; }
+.observation-ui.workbench-ui #tune { font-size: 10px; padding: 6px; }
+.observation-ui.workbench-ui #tune svg { display: none; }
+.observation-ui.workbench-ui #experiment-files { gap: 3px 6px; grid-template-columns: minmax(80px,1fr) auto; }
+.observation-ui.workbench-ui .experiment-actions button { font-size: 10px; padding: 7px; }
+.observation-ui.workbench-ui #experiment-current { font-size: 9px; line-height: 1.3; }
+.observation-ui.workbench-ui #experiment-status { font-size: 9px; line-height: 1.3; max-height: 27px; overflow: auto; }
+.observation-ui.workbench-ui #show-environment { display: inline-flex; }
+.observation-ui.workbench-ui #neural-panel { z-index: 4; border: 0; border-top: 1px solid var(--edge); }
+.observation-ui.workbench-ui #environment-panel { z-index: 4; border: 0; border-top: 1px solid var(--edge); }
+.observation-ui.workbench-ui .camera-tools { inset: 7px 7px auto; max-width: none; gap: 3px; justify-content: center; }
+.observation-ui.workbench-ui .camera-tools button { font-size: 9px; padding: 5px 6px; min-height: 30px; }
+.observation-ui.workbench-ui #interaction-state { top: 42px; right: 12px; }
+.observation-ui.workbench-ui .viewer-footer { flex-wrap: wrap; }
+.observation-ui.workbench-ui .view-note { width: 100%; flex: 1 0 100%; justify-content: flex-start; margin: 0; gap: 6px; }
+.observation-ui.workbench-ui .view-note #view-mode { display: none; }
+.observation-ui.workbench-ui .layer-switch { bottom: 9px; }
+.observation-ui.workbench-ui #tuning-panel { top: 230px; right: 10px; bottom: 102px; width: min(286px,calc(100vw - 20px)); }
+.observation-ui.workbench-ui #source-editor { padding-bottom: 10px; }
+.observation-ui.workbench-ui #pause { min-height: 38px; }
+.observation-ui.workbench-ui #restart { min-height: 38px; }
+}/* Disclosure hierarchy; keeps the original palette and three-column layout. */
+.observation-ui.workbench-ui [hidden] { display: none !important; }
+.observation-ui.workbench-ui #experiment-files { justify-self: end; width: min(100%,510px); grid-template-columns: minmax(140px,260px) auto; }
+.observation-ui.workbench-ui #experiment-name { width: 100%; text-overflow: ellipsis; }
+.observation-ui.workbench-ui #experiment-status { font-size: 12px; }
+.observation-ui.workbench-ui #experiment-status[role="alert"] { color: #edb998; }
+.observation-ui.workbench-ui #exception-status { grid-column: 1/-1; color: #e2b57b; font-size: 12px; margin-top: -8px; }
+.observation-ui.workbench-ui .view-note { font-size: 12px; }
+.observation-ui.workbench-ui #view-mode { display: none; }
+.observation-ui.workbench-ui .live-dot { display: none; }
+.observation-ui.workbench-ui #activity-sample { display: block; font-size: 12px; margin-top: 12px; color: var(--muted); }
+.observation-ui.workbench-ui .spike-strip { margin-top: 3px; }
+.observation-ui.workbench-ui .spike-strip svg { width: 100%; height: 28px; }
+.observation-ui.workbench-ui #neural-detail #brain-spikes { font-size: 14px; }
+.observation-ui.workbench-ui #brain-atlas[data-freshness="paused"] .motor-points { opacity: .6; }
+.observation-ui.workbench-ui #brain-atlas[data-freshness="delayed"] .motor-points { opacity: .6; }
+.observation-ui.workbench-ui #brain-atlas[data-freshness="error"] .motor-points { opacity: .6; }
+.observation-ui.workbench-ui #neural-detail #interaction-state { position: static; display: block; }
+.observation-ui.workbench-ui #neural-detail { margin-top: 20px; }
+.observation-ui.workbench-ui #neural-detail summary { font-size: 12px; padding: 9px 0; }
+.observation-ui.workbench-ui #environment-details summary { font-size: 12px; padding: 9px 0; }
+.observation-ui.workbench-ui #signal-values { display: block; }
+.observation-ui.workbench-ui #source-detail { margin: 14px 0 8px; font-size: 14px; }
+.observation-ui.workbench-ui #source-connection { font-size: 12px; margin: 0 0 12px; }
+.observation-ui.workbench-ui #source-editor { font-size: 12px; }
+.observation-ui.workbench-ui #source-strength { font-size: 12px; }
+.observation-ui.workbench-ui #source-hint { font-size: 12px; }
+.observation-ui.workbench-ui #source-remaining { margin: 8px 0 12px; color: var(--muted); }
+.observation-ui.workbench-ui #source-editor .source-choices button { min-width: 40px; min-height: 40px; }
+.observation-ui.workbench-ui .map-label text { font-size: 2.5px; font-weight: 500; }
+.observation-ui.workbench-ui .map-source .map-label rect { fill: var(--panel); stroke-width: .2; }
+.observation-ui.workbench-ui .map-source[aria-pressed="true"] .map-label rect { stroke-width: .65; stroke: var(--active); }
+.observation-ui.workbench-ui .map-anchor { fill: var(--ink); stroke: #0b1115; stroke-width: .2; }
+.observation-ui.workbench-ui .map-leader { fill: none; stroke: var(--muted); stroke-width: .15; }
+.observation-ui.workbench-ui .map-connected { stroke-width: .4; }
+.observation-ui.workbench-ui #map-archon { stroke: #0b1115; stroke-width: .3; }
+.observation-ui.workbench-ui #engine-control { padding: 12px; }
+.observation-ui.workbench-ui #engine-control h3 { margin: 0 0 8px; font-size: 12px; color: var(--muted); }
+.observation-ui.workbench-ui #experiment-details { margin: 14px; }
+.observation-ui.workbench-ui #experiment-current { font-size: 12px; line-height: 1.6; padding: 8px 0; }
+.observation-ui.workbench-ui #experiment-help { font-size: 12px; line-height: 1.6; padding: 8px 0; }
+.observation-ui.workbench-ui #status:not([role="alert"]) { visibility: hidden; }
+@media (max-width:1199px) {.observation-ui.workbench-ui #experiment-files { justify-self: stretch; width: 100%; grid-template-columns: minmax(140px,260px) auto; justify-content: end; }
+.observation-ui.workbench-ui #exception-status { position: absolute; bottom: 3px; right: 16px; margin: 0; }
+}
+@media (max-width:760px) {.observation-ui.workbench-ui #experiment-files { grid-template-columns: minmax(100px,1fr) auto; gap: 6px; }
+.observation-ui.workbench-ui #experiment-name { font-size: 12px; }
+.observation-ui.workbench-ui .spike-strip svg { height: 22px; }
+.observation-ui.workbench-ui #neural-detail { margin-top: 8px; }
+.observation-ui.workbench-ui #activity-sample { margin-top: 5px; }
+.observation-ui.workbench-ui #exception-status { font-size: 11px; bottom: 37px; left: 12px; right: 12px; }
+.observation-ui.workbench-ui #experiment-status { position: absolute; top: 88px; left: 12px; right: 12px; font-size: 11px; }
+.observation-ui.workbench-ui #environment-details { clear: both; padding-top: 10px; }
+.observation-ui.workbench-ui .camera-tools button { min-height: 34px; font-size: 10px; }
+}
+@media (max-width:760px) {.observation-ui.workbench-ui #exception-status { position: static; grid-column: 1/-1; margin: 0; }
+.observation-ui.workbench-ui #experiment-status { position: static; grid-column: 1/-1; }
+}
+.observation-ui.workbench-ui #current-mode { font-size: 12px; color: var(--active); padding: 7px; }
+/* First-visit typography. */
+.observation-ui.workbench-ui #app-intro { border-top: 1px solid var(--edge); padding-top: 12px; }
+.observation-ui.workbench-ui #app-intro strong { font-size: 15px; font-weight: 500; }
+.observation-ui.workbench-ui #app-intro p { margin: 5px 0; font-size: 12px; color: var(--muted); line-height: 1.5; }
+.observation-ui.workbench-ui #app-intro small { font-size: 11px; color: var(--muted); line-height: 1.5; }
+.observation-ui.workbench-ui #first-experience { flex: 0 0 205px; display: flex; flex-direction: column; gap: 5px; }
+.observation-ui.workbench-ui #source-instruction { font-size: 12px; color: var(--muted); line-height: 1.6; }
+@media (max-width:1199px) { }
+@media (max-width:760px) {.observation-ui.workbench-ui #app-intro { padding-top: 8px; }
+.observation-ui.workbench-ui #first-experience { flex: auto; flex-direction: row; align-items: center; }
+.observation-ui.workbench-ui #first-experience button { flex-shrink: 0; }
+}
+.observation-ui.workbench-ui #atlas-description { text-align: center; font-size: 11px; line-height: 1.5; }
+.observation-ui.workbench-ui .brain-legend { flex-wrap: wrap; gap: 4px 12px; font-size: 10px; }
+.observation-ui.workbench-ui #spike-definition { font-size: 11px; margin-top: 16px; }
+/* Existing control disclosures. */
+.observation-ui.workbench-ui nav { justify-content: flex-start; }
+.observation-ui.workbench-ui #experiment-menu { position: relative; pointer-events: auto; }
+.observation-ui.workbench-ui #view-menu { position: relative; pointer-events: auto; }
+.observation-ui.workbench-ui #experiment-menu > summary { border: 1px solid var(--edge); background: #182125; border-radius: 2px; padding: 9px 12px; color: var(--ink); font-size: 12px; }
+.observation-ui.workbench-ui #view-menu > summary { border: 1px solid var(--edge); background: #182125; border-radius: 2px; padding: 9px 12px; color: var(--ink); font-size: 12px; }
+.observation-ui.workbench-ui .menu-content { position: absolute; top: calc(100% + 5px); right: 0; padding: 14px; background: var(--panel); border: 1px solid var(--edge); width: min(360px,calc(100vw - 24px)); box-shadow: 0 8px 24px #0006; z-index: 8; }
+.observation-ui.workbench-ui #experiment-files { width: 100%; display: flex; flex-direction: column; align-items: stretch; gap: 10px; }
+.observation-ui.workbench-ui #experiment-files > label { position: static; width: auto; height: auto; clip-path: none; font-size: 12px; }
+.observation-ui.workbench-ui #experiment-details { margin: 12px 0 0; }
+.observation-ui.workbench-ui #experiment-status { grid-column: 1/-1; margin: 0; position: static; max-height: none; }
+.observation-ui.workbench-ui #view-menu .menu-content { width: 164px; display: flex; flex-direction: column; gap: 6px; }
+.observation-ui.workbench-ui .camera-tools { overflow: visible; z-index: 3; }
+.observation-ui.workbench-ui #developer-tools { padding: 12px; font-size: 12px; line-height: 1.6; }
+.observation-ui.workbench-ui #developer-tools > summary { font-size: 14px; color: var(--ink); }
+.observation-ui.workbench-ui #developer-tools p { overflow-wrap: anywhere; white-space: pre-wrap; }
+.observation-ui.workbench-ui #developer-tools pre { overflow-wrap: anywhere; white-space: pre-wrap; }
+.observation-ui.workbench-ui #developer-tools .layer-switch { position: static; transform: none; display: flex; margin: 10px 0; }
+.observation-ui.workbench-ui #developer-tools #interaction-state { position: static; }
+.observation-ui.workbench-ui #developer-tools #engine-control { padding: 12px 0; }
+.observation-ui.workbench-ui #tuning-panel { top: 76px; width: min(330px,calc(100vw - 20px)); }
+.observation-ui.workbench-ui #comparison-help { margin-top: 12px; }
+@media (max-width:1199px) {.observation-ui.workbench-ui #tune { grid-column: 4; }
+.observation-ui.workbench-ui #exception-status { position: static; margin: 0; }
+}
+@media (max-width:760px) {.observation-ui.workbench-ui nav { grid-column: 1; grid-row: 2; }
+.observation-ui.workbench-ui #experiment-menu { grid-column: 2; grid-row: 1; }
+.observation-ui.workbench-ui #tune { grid-column: 3; grid-row: 1; }
+.observation-ui.workbench-ui #app-intro strong { font-size: 14px; }
+.observation-ui.workbench-ui #app-intro p { font-size: 11px; }
+.observation-ui.workbench-ui #app-intro small { font-size: 10px; }
+.observation-ui.workbench-ui #experiment-menu .menu-content { right: -62px; }
+.observation-ui.workbench-ui #tuning-panel { top: 65px; }
+.observation-ui.workbench-ui #view-menu > summary { min-height: 34px; padding: 7px 12px; }
+}
+
+
+
+/* Page geometry follows the reference: a wide scene, fitted brain, compact environment. */
+body { overflow-y: auto; }
+#app { height: auto; min-height: 100dvh; }
+.observation-ui.workbench-ui { position: relative; inset: auto; display: flex; flex-direction: column; min-height: 100dvh; --panel: #0c1a21; --active: #70c5d8; --ink: #e0eaf0; --muted: #aec1ca; --edge: #82765366; --observation-height: 514px; background: #07141a; }
+.observation-ui.workbench-ui button, .observation-ui.workbench-ui #view-menu > summary { background-color: #10232d; font-size: 12px; border-color: #67828b3b; padding: 8px 12px; }
+.observation-ui.workbench-ui button:hover { background-color: #1b3440; }
+.observation-ui.workbench-ui button[aria-pressed="true"], .observation-ui.workbench-ui button[aria-expanded="true"] { background-color: #163442; color: #d0f4ff; border-color: #4bacc0; }
+.observation-ui.workbench-ui h2 { font-size: 18px; font-weight: 500; }
+.observation-ui.workbench-ui .viewer-header { position: relative; inset: auto; width: auto; display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 0 24px; padding: 16px 24px 0; background: transparent; border: 0; }
+.observation-ui.workbench-ui nav { grid-column: 2; grid-row: 1; gap: 0; }
+.observation-ui.workbench-ui nav button { font-size: 12px; padding: 8px 14px; }
+.observation-ui.workbench-ui #experiment-files { grid-column: 3; grid-row: 1; display: grid; grid-template-columns: auto 130px auto; align-items: center; width: auto; gap: 8px; }
+.observation-ui.workbench-ui #experiment-files > label { position: static; width: auto; height: auto; clip-path: none; font-size: 12px; }
+.observation-ui.workbench-ui #experiment-name { width: 100%; background: #071218; border-color: #61747c40; text-overflow: ellipsis; }
+.observation-ui.workbench-ui #tune { grid-column: 4; grid-row: 1; }
+.observation-ui.workbench-ui #experiment-status, .observation-ui.workbench-ui #exception-status { position: static; grid-column: 1/-1; margin-top: 6px; font-size: 12px; }
+.observation-ui.workbench-ui #app-intro { grid-column: 1/-1; display: grid; grid-template-columns: 1.05fr 1fr 194px; gap: 28px; align-items: center; margin: 16px -24px 0; padding: 16px 24px 20px; border-top: 1px solid var(--edge); }
+.observation-ui.workbench-ui #app-intro strong { display: block; font-size: 18px; font-weight: 500; }
+.observation-ui.workbench-ui #app-intro p { margin: 5px 0 0; font-size: 13px; }
+.observation-ui.workbench-ui .signal-path { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 12px; }
+.observation-ui.workbench-ui .signal-path span { white-space: nowrap; }
+.observation-ui.workbench-ui .signal-path small { display: block; margin-top: 4px; font-size: 10px; }
+.observation-ui.workbench-ui .signal-path b { color: var(--active); font-size: 18px; font-weight: 400; }
+.observation-ui.workbench-ui #first-experience { display: flex; flex-direction: column; gap: 5px; }
+.observation-ui.workbench-ui #first-experience small { text-align: center; font-size: 10px; }
+.observation-ui.workbench-ui #guide-start { min-height: 34px; }
+.observation-ui.workbench-ui #observation-stage { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.38fr) minmax(240px,.56fr); gap: 6px; padding: 0 18px; align-items: stretch; }
+.observation-ui.workbench-ui #neural-panel, .observation-ui.workbench-ui #environment-panel, .observation-ui.workbench-ui #archon-panel { position: relative; inset: auto; grid-area: auto; width: auto; height: var(--observation-height); min-width: 0; box-sizing: border-box; overflow: visible; background: var(--panel); border: 1px solid var(--edge); border-radius: 4px; }
+.observation-ui.workbench-ui #neural-panel { display: flex; flex-direction: column; padding: 16px 18px; }
+.observation-ui.workbench-ui #neural-panel > h2 { height: 28px; flex-shrink: 0; padding: 0; margin: 0; }
+.observation-ui.workbench-ui #neural-flow { display: flex; flex: 1; flex-direction: column; min-height: 0; }
+.observation-ui.workbench-ui .brain-heading { height: 27px; flex-shrink: 0; padding: 0 0 6px; font-size: 12px; }
+.observation-ui.workbench-ui #brain-view-home { display: flex; flex: 1; min-height: 0; }
+.observation-ui.workbench-ui #brain-activity { display: flex; flex: 1; flex-direction: column; min-width: 0; padding: 0; }
+.observation-ui.workbench-ui .brain-figure { margin: 0; }
+.observation-ui.workbench-ui #brain-atlas { display: block; width: 100%; height: auto; min-height: 0; max-height: none; background: #061118; }
+.observation-ui.workbench-ui .brain-legend { height: 35px; margin: 0; display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; font-size: 10px; }
+.observation-ui.workbench-ui .brain-legend span::before { height: 6px; width: 6px; }
+.observation-ui.workbench-ui #activity-caption { display: flex; justify-content: space-between; gap: 8px; padding: 12px 0 4px; font-size: 11px; border-top: 1px solid #67828b30; }
+.observation-ui.workbench-ui #activity-caption #spike-definition, .observation-ui.workbench-ui #activity-caption #activity-sample { margin: 0; font-size: 11px; }
+.observation-ui.workbench-ui .spike-strip { flex: 1; display: flex; margin: 0; min-height: 30px; }
+.observation-ui.workbench-ui .spike-strip svg { width: 100%; height: 100%; min-height: 30px; }
+.observation-ui.workbench-ui #archon-panel { display: flex; flex-direction: column; padding: 0; }
+.observation-ui.workbench-ui .observation-heading { height: 56px; flex-shrink: 0; display: flex; align-items: center; gap: 8px; padding: 12px 16px; box-sizing: border-box; }
+.observation-ui.workbench-ui .observation-heading h2 { margin: 0; }
+.observation-ui.workbench-ui .camera-tools { position: static; max-width: none; margin-left: auto; gap: 8px; flex-wrap: nowrap; }
+.observation-ui.workbench-ui .camera-tools button, .observation-ui.workbench-ui #view-menu > summary { min-height: 32px; padding: 6px 9px; font-size: 11px; white-space: nowrap; }
+.observation-ui.workbench-ui #scene-viewport { position: relative; inset: auto; grid-area: auto; flex: 1; min-height: 0; height: auto; width: 100%; margin: 0; overflow: hidden; border-radius: 0 0 4px 4px; }
+.observation-ui.workbench-ui #scene-safe-area { position: absolute; inset: 0; pointer-events: none; }
+.observation-ui.workbench-ui #environment-panel { display: block; padding: 16px; }
+.observation-ui.workbench-ui #environment-panel > h2 { margin: 0 0 12px; }
+.observation-ui.workbench-ui #minimap-host { float: none; width: auto; margin: 0; }
+.observation-ui.workbench-ui #environment-map { width: 100%; height: 176px; aspect-ratio: auto; background: #08151c; }
+.observation-ui.workbench-ui .map-legend { margin: 5px 0 10px; font-size: 10px; }
+.observation-ui.workbench-ui #environment-panel #source-editor { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 0 6px; width: auto; margin: 8px 0 0; padding: 10px 0 0; border-top: 1px solid #67828b30; }
+.observation-ui.workbench-ui .source-toolbar { grid-column: 1/-1; gap: 4px; flex-wrap: nowrap; }
+.observation-ui.workbench-ui #source-fields, .observation-ui.workbench-ui #source-hint { grid-column: 1/-1; }
+.observation-ui.workbench-ui .source-toolbar strong { font-size: 12px; }
+.observation-ui.workbench-ui .source-choices button { min-height: 32px; min-width: 32px; padding: 6px 9px; }
+.observation-ui.workbench-ui #source-detail { margin-top: 8px; font-size: 12px; }
+.observation-ui.workbench-ui #source-connection { margin: 8px 0 0; font-size: 10px; text-align: right; align-self: center; }
+.observation-ui.workbench-ui .source-strength { margin: 10px 0 6px; gap: 2px; font-size: 12px; }
+.observation-ui.workbench-ui .source-strength input { min-height: 18px; height: 18px; margin: 3px 0 0; }
+.observation-ui.workbench-ui #source-remaining { margin: 6px 0; font-size: 12px; }
+.observation-ui.workbench-ui #delete-source { width: auto; min-height: 32px; padding: 6px 12px; margin: 5px 0 0; font-size: 12px; }
+.observation-ui.workbench-ui #source-hint { font-size: 10px; line-height: 1.45; margin: 7px 0 0; }
+.observation-ui.workbench-ui .viewer-footer { position: relative; inset: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 6px 18px 0; padding: 10px 6px; background: transparent; }
+.observation-ui.workbench-ui #pause { min-width: 112px; background-color: #1d4a5b; border-color: #5eabbc; }
+.observation-ui.workbench-ui #restart { padding: 8px 16px; }
+.observation-ui.workbench-ui .view-note { font-size: 12px; }
+.observation-ui.workbench-ui #learn-section { pointer-events: auto; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); margin: 12px 18px 24px; padding: 22px 0; border: 1px solid #60757e59; border-radius: 8px; background: #10212a; }
+.observation-ui.workbench-ui #learn-section > section { display: flex; flex-direction: column; padding: 0 24px; margin: 0; min-width: 0; line-height: 1.65; color: var(--muted); }
+.observation-ui.workbench-ui #learn-section > section > p { flex: 1; }
+.observation-ui.workbench-ui #learn-section > section + section { border-left: 1px solid #617b8533; }
+.observation-ui.workbench-ui #learn-section h2 { margin: 0 0 10px; font-size: 17px; }
+.observation-ui.workbench-ui #learn-section p { font-size: 13px; line-height: 1.7; margin: 0 0 16px; }
+.observation-ui.workbench-ui #learn-section summary { font-size: 12px; padding: 8px 0; color: #b9e7f2; }
+.observation-ui.workbench-ui #neural-detail { margin: 0; padding: 0; border: 0; }
+.observation-ui.workbench-ui #neural-detail p { font-size: 12px; }
+.observation-ui.workbench-ui #model-limits #source-instruction { display: block; }
+.observation-ui.workbench-ui #learn-link { pointer-events: auto; color: var(--active); font-size: 11px; white-space: nowrap; text-underline-offset: 3px; }
+.observation-ui.workbench-ui #open-advanced { margin: 0 8px 0 0; }
+.observation-ui.workbench-ui #experiment-guide { position: static; width: auto; max-width: none; margin: 0; }
+.observation-ui.workbench-ui #guide-body { border: 0; background: none; padding: 0; max-height: none; overflow: visible; }
+.observation-ui.workbench-ui #guide-body p { font-size: 12px; }
+.observation-ui.workbench-ui #comparison-help { margin: 0; }
+.observation-ui.workbench-ui #comparison-help > summary, .observation-ui.workbench-ui #neural-detail > summary, .observation-ui.workbench-ui #model-limits > summary { display: inline-block; border: 1px solid #8da1a475; border-radius: 2px; padding: 7px 14px; color: var(--ink); }
+.observation-ui.workbench-ui #comparison-help[open] > summary, .observation-ui.workbench-ui #neural-detail[open] > summary { margin-bottom: 12px; }
+.observation-ui.workbench-ui #tuning-panel { position: fixed; top: 70px; bottom: auto; max-height: calc(100dvh - 90px); width: min(350px,calc(100vw - 24px)); overflow: auto; }
+.observation-ui.workbench-ui #experiment-menu .menu-content { position: static; width: auto; padding: 8px; box-shadow: none; }
+.observation-ui.workbench-ui #site-footer { pointer-events: auto; display: flex; align-items: center; gap: 24px; padding: 18px 24px; margin-top: auto; border-top: 1px solid var(--edge); font-size: 11px; color: var(--muted); }
+.observation-ui.workbench-ui #site-footer strong { color: var(--ink); font-weight: 500; }
+.observation-ui.workbench-ui #site-footer a { margin-left: auto; color: var(--active); text-underline-offset: 3px; }
+.observation-ui.workbench-ui.hidden-ui > #observation-stage, .observation-ui.workbench-ui.hidden-ui #archon-panel, .observation-ui.workbench-ui.hidden-ui #scene-viewport, .observation-ui.workbench-ui.hidden-ui #scene-viewport canvas { visibility: visible; }
+.observation-ui.workbench-ui.hidden-ui #neural-panel, .observation-ui.workbench-ui.hidden-ui #environment-panel, .observation-ui.workbench-ui.hidden-ui .observation-heading { visibility: hidden; }
+@media (min-width:760px) and (max-width:1099px) {
+  .observation-ui.workbench-ui #observation-stage { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .observation-ui.workbench-ui #environment-panel { grid-column: 1/-1; display: grid; height: auto; grid-template-columns: 260px minmax(0,1fr); gap: 0 24px; }
+  .observation-ui.workbench-ui #environment-panel > h2 { grid-column: 1/-1; }
+  .observation-ui.workbench-ui #environment-panel #source-editor { margin: 0; }
+}
+@media (max-width:1250px) {
+  .observation-ui.workbench-ui .viewer-header { gap: 0 12px; }
+  .observation-ui.workbench-ui #experiment-files { grid-template-columns: 110px auto; }
+  .observation-ui.workbench-ui #experiment-files > label { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); }
+  .observation-ui.workbench-ui #app-intro { grid-template-columns: 1fr 190px; }
+  .observation-ui.workbench-ui .signal-path { display: none; }
+  .observation-ui.workbench-ui .observation-heading { flex-wrap: wrap; height: 84px; gap: 5px; }
+  .observation-ui.workbench-ui .camera-tools { margin-left: 0; }
+}
+@media (max-width:759px) {
+  .observation-ui.workbench-ui .viewer-header { grid-template-columns: 1fr auto; padding: 12px 12px 0; gap: 10px; }
+  .observation-ui.workbench-ui h1 { font-size: 20px; }
+  .observation-ui.workbench-ui nav { grid-column: 1; grid-row: 2; }
+  .observation-ui.workbench-ui #tune { grid-column: 2; grid-row: 1; font-size: 12px; padding: 8px 12px; }
+  .observation-ui.workbench-ui #experiment-files { grid-column: 1/-1; grid-row: 3; grid-template-columns: minmax(80px,1fr) auto; gap: 8px; }
+  .observation-ui.workbench-ui .experiment-actions button { font-size: 11px; padding: 8px 10px; }
+  .observation-ui.workbench-ui #app-intro { grid-row: auto; grid-template-columns: 1fr; gap: 12px; margin: 4px -12px 0; padding: 12px; }
+  .observation-ui.workbench-ui #app-intro strong { font-size: 17px; }
+  .observation-ui.workbench-ui #app-intro p { font-size: 12px; }
+  .observation-ui.workbench-ui #first-experience { align-items: flex-start; }
+  .observation-ui.workbench-ui #first-experience small { display: none; }
+  .observation-ui.workbench-ui #observation-stage { display: flex; flex-direction: column; padding: 0 12px; gap: 12px; }
+  .observation-ui.workbench-ui #archon-panel { order: 0; width: 100%; height: 470px; }
+  .observation-ui.workbench-ui #neural-panel { order: 1; width: 100%; height: auto; padding: 16px; }
+  .observation-ui.workbench-ui #environment-panel { order: 2; width: 100%; height: auto; padding: 16px; }
+  .observation-ui.workbench-ui #environment-panel #source-editor { padding-top: 12px; }
+  .observation-ui.workbench-ui #environment-map { height: 230px; }
+  .observation-ui.workbench-ui .viewer-footer { margin: 8px 12px 0; }
+  .observation-ui.workbench-ui .view-note { flex-basis: 100%; }
+  .observation-ui.workbench-ui .spike-strip { flex: auto; height: 56px; }
+  .observation-ui.workbench-ui #activity-caption, .observation-ui.workbench-ui #activity-caption #spike-definition, .observation-ui.workbench-ui #activity-caption #activity-sample { font-size: 10px; }
+  .observation-ui.workbench-ui #learn-section { grid-template-columns: 1fr; margin: 12px; padding: 0 20px; }
+  .observation-ui.workbench-ui #learn-section > section { padding: 20px 0; }
+  .observation-ui.workbench-ui #learn-section > section + section { border-left: 0; border-top: 1px solid #617b8533; }
+  .observation-ui.workbench-ui #site-footer { flex-wrap: wrap; gap: 8px 16px; padding: 16px 12px; }
+  .observation-ui.workbench-ui #site-footer span { order: 2; flex-basis: 100%; }
+}
+.observation-ui.workbench-ui #brain-expand { float: right; margin-top: -2px; min-height: 32px; font-size: 12px; }
+.observation-ui.workbench-ui #brain-dialog { pointer-events: auto; width: min(1100px, calc(100vw - 40px)); max-width: none; max-height: calc(100dvh - 32px); padding: 16px; border: 1px solid var(--edge); color: var(--ink); background: var(--panel); overflow: auto; }
+.observation-ui.workbench-ui #brain-dialog::backdrop { background: #000b; }
+.observation-ui.workbench-ui #brain-dialog > header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.observation-ui.workbench-ui #brain-dialog h2 { margin: 0; }
+.observation-ui.workbench-ui #brain-dialog #brain-atlas { height: min(68dvh, 720px); }
+.observation-ui.workbench-ui #brain-dialog .spike-strip { height: 50px; }

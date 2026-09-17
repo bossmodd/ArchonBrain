@@ -1,0 +1,71 @@
+{
+  "WORLD_CONFIG": {
+    "centerHeight": 2.4,
+    "contactRange": 2.3,
+    "signalDistance": 6,
+    "absorptionPerSecond": 0.12
+  },
+  "SIGNAL_CONFIG": {
+    "sensorOffset": 0.6,
+    "contrast": 12,
+    "rateScaleHz": 14,
+    "concentrationGain": 5,
+    "maxHz": 48
+  },
+  "CONTROL_CONFIG": {
+    "smoothingSeconds": 0.15,
+    "feedStartHz": 12,
+    "feedHoldHz": 6,
+    "startHoldSeconds": 0.2,
+    "stopHoldSeconds": 0.3,
+    "preparationSeconds": 1.2,
+    "maxSpeed": 1,
+    "forwardScaleHz": 12,
+    "backwardScaleHz": 30,
+    "turnScaleHz": 50,
+    "maxYaw": 1.1,
+    "maxAssistYaw": 0.2
+  },
+  "REMOTE_CONTROL_CONFIG": {
+    "smoothingSeconds": 0.15,
+    "feedStartHz": 12,
+    "feedHoldHz": 6,
+    "startHoldSeconds": 0.2,
+    "stopHoldSeconds": 0.3,
+    "preparationSeconds": 1.2,
+    "maxSpeed": 1,
+    "forwardScaleHz": 12,
+    "backwardScaleHz": 30,
+    "turnScaleHz": 10,
+    "maxYaw": 1.1,
+    "maxAssistYaw": 0.2
+  },
+  "sha256": {
+    "docs/neural/approach-app-verification.json": "e2db46f69a180a55ac197a5d514ecee85b1d8802f4c60b664679da653d1ad53f",
+    "docs/neural/approach-app-summary.json": "66503379a0d158ca92311f3dad8772873fbd3dbcfbfdbf39e137552f833006cb",
+    "docs/neural/verification.json": "c663ebcf3196cfb52703f39e1ad25c463e0fe44adf213e5064fa22d4bf5b62ed",
+    "src/neural/NeuralModel.js": "59b982822c4e984b8123db83b271faa2269e7134f8686ff111932b196459d296",
+    "src/neural/brain.worker.js": "f4c57674cb856b6618fca194fac4d415421661cebc3264ccbe8bd4a37d49f484",
+    "public/neural/flybrain/data/tame783.json": "cb415333073492a3e76e16a9e606edb07b99715dd983f93f8232d18c4bb0af1b",
+    "src/archon/AbsorptionEffect.js": "bc9164bc72378550aa75078e4ff4a523dac15c5b94fd525c363039cb6dccf5cb",
+    "src/archon/ArchonEntity.js": "6c3e202623d0fa2977700cb212ae3121d76e8a70e5d94a78e303d163142d9a1d",
+    "src/archon/ArmRigCalibration.js": "e0d7998230b01380ab1c9d8ac924d88bdcb824b01c5a2a366926032fbba46db0",
+    "src/archon/BodyMesh.js": "a9bf909e3ae6c9c954c3b5b76d195180e78bba4ab9d5cf95d0bba67dedf9ef7a",
+    "src/archon/ElectricArcs.js": "5dc275fbc6478b960e1fc84a2d515bdcee1e63b446cc5dcc79096dbbcc0c3f9e",
+    "src/archon/EnergyKnot.js": "c322cdbe3802d53ebea7273102dd5f98f276a37dcf5355c976e92eacd1dbe97a",
+    "src/archon/EyeGlow.js": "a6ea1feefabcb7fac8e440169bc38b37c1d04f7980f3a9fa3a293ae6aa339be7",
+    "src/archon/FilamentLayer.js": "935bb5bb2b943a509523d72e4a750be1ade2ac31109a47d3d6e6df761321e64c",
+    "src/archon/InnerGlow.js": "2b9c762032593f71ae1663c7aea399fbf9864e6d9c2833878e8d2cf56e94d1de",
+    "src/archon/InteractionPose.js": "c23078f633dcf192b00111c3e4b09ffeda7c37415b44f62a2bc31132fd26f23b",
+    "src/archon/InteractionState.js": "fd8ba03cc1fe32e076e466644e40ffe9a654fedea62b3916e41b68d828f6cd08",
+    "src/archon/PsionicShell.js": "16b3766eb4ce6c970f343b4a3b932c2ae2e07e56502588fa534cd6cbdfbdf7a8",
+    "src/archon/RedSatelliteSystem.js": "3c10250b2765bf5ba02dd300f6b16b76f92210ee290d1a51dd266ced76a17661",
+    "src/archon/SparkParticles.js": "bb4d10f97dd9d212822be8ee1584613d18ef71733e013276d47d6edf18998eae",
+    "src/archon/SurfaceAnchor.js": "0eaaf83acfa5b086ecb67e845978250914755734fde30b504f3376046343fc4c",
+    "src/archon/motion.js": "e490c77165bda73fb0b8ee6a2330ef8ad80c996f1b4ebc78f55f52e2c8692d18",
+    "src/archon/parameters.js": "696501f22f1e140eba3fd53ac76dffbca9a0a80cb091b746205dbd03c7fd69de",
+    "src/shaders/filament.js": "49596f96c8cfffb91e146a46d22c062a637df6bdb10aa21bc60c87ab4d929be9",
+    "src/shaders/noise.js": "e0d0b3ae1e4e9ce3723bec75cb0eec2fe3d15fb21909ce8d229f660d83e98fb5",
+    "src/shaders/volume.js": "06cdc52e7e5fde1cf9c023ed2741b30fc9a7ffb878716bbada19a073b2300220"
+  }
+}

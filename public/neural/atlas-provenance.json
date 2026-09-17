@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/satorunet/hae",
+  "commit": "3625e01b09e5960a54722143ea03e67c845b88bb",
+  "dataset": "FlyWire v783",
+  "file": "public/neural/flybrain/data/pos783.bin.gz",
+  "bytes": 593054,
+  "sha256": "352d7ccdf88a58c43783e372402b713a37fb026b883582a021f199b5bdf59c0e",
+  "source": "https://github.com/satorunet/hae/blob/3625e01b09e5960a54722143ea03e67c845b88bb/flybrain/data/pos783.bin.gz",
+  "dataLicense": "CC-BY-4.0",
+  "codeLicense": "MIT",
+  "attribution": [
+    "FlyWire Consortium; Dorkenwald, Matsliah et al. 2024",
+    "Cell annotations: Schlegel et al. 2024"
+  ],
+  "mapping": "export_positions.py reindexes annotation root_id by Completeness_783.csv index; export_graph.py writes graph root IDs in that same order. Both scripts pinned and vendored. Metadata IDs are read from the existing WASM graph.",
+  "projection": "Representative pos_x/pos_y normalized to uint16; fly left displayed left, dorsal up. Not neuron morphology or a 3D brain.",
+  "modelNeurons": 138639,
+  "mappedNeurons": 138625,
+  "omittedUnannotated": 14,
+  "activity": "Static anatomy; gold applied input Hz; cyan existing sampled output neuron Hz from response.raw. Whole-network spike totals use response.spikes. No fabricated full-brain per-neuron activity."
+}

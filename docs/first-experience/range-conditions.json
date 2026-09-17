@@ -1,0 +1,423 @@
+{
+  "frozenAt": "2026-09-17T03:37:59.819Z",
+  "profile": "olfactory",
+  "assist": false,
+  "directional": true,
+  "outputsEnabled": true,
+  "cases": [
+    {
+      "id": "d4-s1-seed3",
+      "distance": 4,
+      "strength": 1,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2.0000000000000004
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d4-s1-seed11",
+      "distance": 4,
+      "strength": 1,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2.0000000000000004
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d4-s0.7-seed3",
+      "distance": 4,
+      "strength": 0.7,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2.0000000000000004
+        },
+        "strength": 0.7,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d4-s0.7-seed11",
+      "distance": 4,
+      "strength": 0.7,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2.0000000000000004
+        },
+        "strength": 0.7,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d4-s0.35-seed3",
+      "distance": 4,
+      "strength": 0.35,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2.0000000000000004
+        },
+        "strength": 0.35,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d4-s0.35-seed11",
+      "distance": 4,
+      "strength": 0.35,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2.0000000000000004
+        },
+        "strength": 0.35,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d6-s1-seed3",
+      "distance": 6,
+      "strength": 1,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 5.196152422706632,
+          "y": 2.4,
+          "z": 3.000000000000001
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d6-s1-seed11",
+      "distance": 6,
+      "strength": 1,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 5.196152422706632,
+          "y": 2.4,
+          "z": 3.000000000000001
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d6-s0.7-seed3",
+      "distance": 6,
+      "strength": 0.7,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 5.196152422706632,
+          "y": 2.4,
+          "z": 3.000000000000001
+        },
+        "strength": 0.7,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d6-s0.7-seed11",
+      "distance": 6,
+      "strength": 0.7,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 5.196152422706632,
+          "y": 2.4,
+          "z": 3.000000000000001
+        },
+        "strength": 0.7,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d6-s0.35-seed3",
+      "distance": 6,
+      "strength": 0.35,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 5.196152422706632,
+          "y": 2.4,
+          "z": 3.000000000000001
+        },
+        "strength": 0.35,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d6-s0.35-seed11",
+      "distance": 6,
+      "strength": 0.35,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 5.196152422706632,
+          "y": 2.4,
+          "z": 3.000000000000001
+        },
+        "strength": 0.35,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d8-s1-seed3",
+      "distance": 8,
+      "strength": 1,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 6.928203230275509,
+          "y": 2.4,
+          "z": 4.000000000000001
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d8-s1-seed11",
+      "distance": 8,
+      "strength": 1,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 6.928203230275509,
+          "y": 2.4,
+          "z": 4.000000000000001
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d8-s0.7-seed3",
+      "distance": 8,
+      "strength": 0.7,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 6.928203230275509,
+          "y": 2.4,
+          "z": 4.000000000000001
+        },
+        "strength": 0.7,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d8-s0.7-seed11",
+      "distance": 8,
+      "strength": 0.7,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 6.928203230275509,
+          "y": 2.4,
+          "z": 4.000000000000001
+        },
+        "strength": 0.7,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d8-s0.35-seed3",
+      "distance": 8,
+      "strength": 0.35,
+      "seed": 3,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 6.928203230275509,
+          "y": 2.4,
+          "z": 4.000000000000001
+        },
+        "strength": 0.35,
+        "remaining": 1
+      },
+      "seconds": 30
+    },
+    {
+      "id": "d8-s0.35-seed11",
+      "distance": 8,
+      "strength": 0.35,
+      "seed": 11,
+      "pose": {
+        "x": 0,
+        "z": 0,
+        "heading": 0
+      },
+      "source": {
+        "id": "probe",
+        "label": "A",
+        "position": {
+          "x": 6.928203230275509,
+          "y": 2.4,
+          "z": 4.000000000000001
+        },
+        "strength": 0.35,
+        "remaining": 1
+      },
+      "seconds": 30
+    }
+  ]
+}

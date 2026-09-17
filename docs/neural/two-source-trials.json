@@ -1,0 +1,327 @@
+[
+  {
+    "name": "equal-separated",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "left",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "right",
+        "label": "B",
+        "position": {
+          "x": -3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 60
+  },
+  {
+    "name": "equal-separated",
+    "seed": 7,
+    "sources": [
+      {
+        "id": "left",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "right",
+        "label": "B",
+        "position": {
+          "x": -3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 60
+  },
+  {
+    "name": "weaker-right",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "left",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "right",
+        "label": "B",
+        "position": {
+          "x": -3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 0.35,
+        "remaining": 1
+      }
+    ],
+    "seconds": 60
+  },
+  {
+    "name": "add-opposite-while-moving",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "left",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 45,
+    "action": {
+      "at": 2,
+      "type": "add",
+      "source": {
+        "id": "right",
+        "label": "B",
+        "position": {
+          "x": -3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    }
+  },
+  {
+    "name": "edit-other-during-absorption",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "near",
+        "label": "A",
+        "position": {
+          "x": 0,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "far",
+        "label": "B",
+        "position": {
+          "x": 6,
+          "y": 2.4,
+          "z": 0
+        },
+        "strength": 0.3,
+        "remaining": 1
+      }
+    ],
+    "seconds": 35,
+    "action": {
+      "at": 3,
+      "type": "edit",
+      "id": "far",
+      "patch": {
+        "position": {
+          "x": -5,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 0.6
+      }
+    }
+  },
+  {
+    "name": "delete-connected",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "near",
+        "label": "A",
+        "position": {
+          "x": 0,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "far",
+        "label": "B",
+        "position": {
+          "x": 6,
+          "y": 2.4,
+          "z": 0
+        },
+        "strength": 0.3,
+        "remaining": 1
+      }
+    ],
+    "seconds": 40,
+    "action": {
+      "at": 3,
+      "type": "remove",
+      "id": "near"
+    }
+  },
+  {
+    "name": "after-natural-release",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "near",
+        "label": "A",
+        "position": {
+          "x": 0,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "far",
+        "label": "B",
+        "position": {
+          "x": 6,
+          "y": 2.4,
+          "z": 0
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 60
+  },
+  {
+    "name": "overlap-lock",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "contact-a",
+        "label": "A",
+        "position": {
+          "x": 0,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "contact-b",
+        "label": "B",
+        "position": {
+          "x": 1.2,
+          "y": 2.4,
+          "z": 1.5
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 25,
+    "action": {
+      "at": 3,
+      "type": "edit",
+      "id": "contact-a",
+      "patch": {
+        "position": {
+          "x": 0.3,
+          "y": 2.4,
+          "z": 1
+        },
+        "strength": 1
+      }
+    }
+  },
+  {
+    "name": "overlap-exact-tie",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "tie-a",
+        "label": "A",
+        "position": {
+          "x": 1,
+          "y": 2.4,
+          "z": 1
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "tie-b",
+        "label": "B",
+        "position": {
+          "x": -1,
+          "y": 2.4,
+          "z": 1
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 30
+  },
+  {
+    "name": "equal-reversed-array",
+    "seed": 1,
+    "sources": [
+      {
+        "id": "right",
+        "label": "B",
+        "position": {
+          "x": -3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      },
+      {
+        "id": "left",
+        "label": "A",
+        "position": {
+          "x": 3.4641016151377544,
+          "y": 2.4,
+          "z": 2
+        },
+        "strength": 1,
+        "remaining": 1
+      }
+    ],
+    "seconds": 60
+  }
+]

@@ -1,0 +1,73 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { InteractionState } from '../src/archon/InteractionState.js';
+
+test('gathering and the faster reach have distinct motion envelopes with continuous interruption', () => {
+  const state = new InteractionState();
+  state.update(0);
+  state.set({ phase: 'prepare', target: { x: 3, y: 3, z: 2 } });
+  const gathered = state.update(1.1);
+  assert.ok(gathered.windup > 0.9, 'Preparation must gather rather than already hold the final reach');
+  assert.ok(gathered.extension < 0.3);
+  state.set({ phase: 'absorb' });
+  const changed = state.update(1.1);
+  for (const channel of ['pose', 'windup', 'extension', 'impulse']) assert.equal(changed[channel], gathered[channel]);
+  const burst = state.update(1.34);
+  assert.ok(burst.extension > 0.65, 'The reach should accelerate visibly after the gathered pose');
+  assert.ok(burst.impulse > 0.6, 'The chest and shoulders need a short follow-through');
+  state.set({ phase: 'release' });
+  const cut = state.update(1.34);
+  for (const channel of ['pose', 'windup', 'extension', 'impulse']) assert.equal(cut[channel], burst[channel]);
+  state.update(1.5);
+  state.set({ phase: 'prepare' });
+  const restart = state.update(1.5);
+  assert.ok(restart.extension > 0, 'Restart from the current posture');
+  const gatheredAgain = state.update(2.6);
+  assert.equal(gatheredAgain.windup, 1);
+  state.set({ phase: 'absorb' });
+  const sustained = state.update(4.5);
+  assert.equal(sustained.extension, 1);
+  assert.equal(sustained.impulse, 0, 'A sustained signal must not repeatedly trigger the accent');
+});
+
+test('interaction signals blend preparation, absorption and interrupted recovery without a pose jump', () => {
+  const state = new InteractionState();
+  state.update(0);
+  assert.equal(state.set({ phase: 'prepare', target: { x: 3, y: 3, z: 2 } }), true);
+  const preparing = state.update(0.55);
+  assert.ok(preparing.pose > 0.2 && preparing.pose < 0.8);
+  assert.equal(preparing.flow, 0, 'Preparation gathers light without a connection');
+  state.set({ phase: 'absorb', target: { x: 3, y: 3, z: 2 } });
+  assert.equal(state.update(0.55).pose, preparing.pose, 'A new signal must not snap the arms');
+  const active = state.update(1.8);
+  assert.equal(active.pose, 1);
+  assert.equal(active.flow, 1);
+  state.set({ phase: 'release' });
+  assert.equal(state.update(1.8).pose, active.pose);
+  const fading = state.update(2.2);
+  assert.ok(fading.pose > 0 && fading.pose < 1);
+  assert.equal(fading.flow, 0, 'The connection fades before the arms return');
+  state.set({ phase: 'prepare', target: { x: -3, y: 2.5, z: 1 } });
+  assert.equal(state.update(2.2).pose, fading.pose, 'Restart during release is continuous');
+  state.set({ phase: 'idle' });
+  const idle = state.update(4);
+  assert.equal(idle.phase, 'idle');
+  assert.equal(idle.pose, 0);
+  assert.equal(idle.flow, 0);
+  assert.equal(idle.charge, 0);
+  assert.equal(state.set({ phase: 'absorb', target: { x: NaN, y: 2, z: 0 } }), false);
+  assert.equal(state.set({ phase: 'unknown' }), false);
+});
+
+test('repeated idle controller signals do not restart a finished release', () => {
+  const state = new InteractionState();
+  state.set({ phase: 'idle' });
+  assert.equal(state.update(0.1).phase, 'idle');
+  state.set({ phase: 'prepare', target: { x: 0, y: 3, z: 2 } });
+  state.update(1.3);
+  state.set({ phase: 'idle' });
+  assert.equal(state.update(1.4).phase, 'release');
+  assert.equal(state.update(2.5).phase, 'idle');
+  state.set({ phase: 'idle' });
+  assert.equal(state.update(2.6).phase, 'idle');
+});
