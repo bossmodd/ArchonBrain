@@ -28,7 +28,7 @@ export class ViewerUI {
     this.root.className = 'viewer-ui';
     this.root.innerHTML = `
       <header class="viewer-header">
-        <div class="wordmark"><img class="brand-portrait" src="/images/archon-portrait.gif" alt="" width="44" height="48"><div><h1>ArchonBrain</h1></div></div>
+        <div class="wordmark"><img class="brand-portrait" src="/images/archon-icon.png" alt="" width="44" height="44"><div><h1>ArchonBrain</h1></div></div>
         <nav aria-label="Viewer controls">
           <button id="interaction-preview" aria-pressed="false" title="Preview absorption">Preview</button>
           <button id="orbit" aria-pressed="false" title="Toggle orbit (O)">${icon('orbit')}<span>Orbit</span></button>

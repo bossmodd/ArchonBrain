@@ -1,4 +1,4 @@
-<img src="public/images/archon-portrait.gif" alt="Archon portrait" width="72" align="right">
+<img src="public/images/archon-icon.png" alt="Archon portrait" width="72" align="right">
 
 # ArchonBrain
 

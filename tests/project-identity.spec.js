@@ -3,7 +3,8 @@ import { test, expect } from '@playwright/test';
 test('public identity uses the supplied portrait, a right-aligned repository link, and honest fan-project intent', async ({ page }) => {
   await page.goto('/');
   const portrait = page.locator('.wordmark img');
-  await expect(portrait).toHaveAttribute('src', '/images/archon-portrait.gif');
+  await expect(portrait).toHaveAttribute('src', '/images/archon-icon.png');
+  await expect(page.locator('link[rel="icon"]')).toHaveAttribute('href', '/images/archon-icon.png');
   await expect.poll(() => portrait.evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
   const repo = page.locator('.viewer-header a.github-link');
   await expect(repo).toHaveAttribute('href', 'https://github.com/bossmodd/ArchonBrain');

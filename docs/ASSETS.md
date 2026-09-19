@@ -29,4 +29,4 @@ Inline icons use Lucide paths (ISC license); see `third_party/lucide/LICENSE`. T
 
 ## Header portrait
 
-`public/images/archon-portrait.gif` is the animated Archon portrait supplied by the maintainer for the header and README. It is fan-project artwork/reference material, not original MIT-licensed code. StarCraft-related characters and imagery retain their respective rights holders' rights; inclusion here does not grant a separate reuse license. The project's non-commercial fan-made purpose is an intent statement, not a claim of official affiliation or permission from Blizzard Entertainment.
+`public/images/archon-icon.png` is the static Archon portrait supplied by the maintainer for the app icon, header and README. It is fan-project artwork/reference material, not original MIT-licensed code. StarCraft-related characters and imagery retain their respective rights holders' rights; inclusion here does not grant a separate reuse license. The project's non-commercial fan-made purpose is an intent statement, not a claim of official affiliation or permission from Blizzard Entertainment.
