@@ -50,6 +50,24 @@ export class ExperienceLayout {
     this.instruction = document.createElement('p');
     this.instruction.id = 'experience-instruction';
     root.querySelector('.viewer-header').append(this.instruction);
+    const socialLinks = document.createElement('div');
+    socialLinks.className = 'social-links';
+    const links = [
+      ['github-link', 'GitHub', 'https://github.com/bossmodd/ArchonBrain', 'M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.68.08-.68 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.4-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.01-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.09 1.15a10.77 10.77 0 0 1 5.62 0c2.14-1.45 3.08-1.15 3.08-1.15.62 1.55.23 2.69.12 2.98.72.78 1.16 1.78 1.16 3.01 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.04.76 2.1v3.08c0 .3.2.65.77.54A11.25 11.25 0 0 0 12 .75Z'],
+      ['x-link', 'X — @Paczep', 'https://x.com/Paczep', 'M18.9 2H22l-6.77 7.74L23.2 22h-6.24l-4.89-7.43L5.57 22H2.45l7.99-9.14L.8 2h6.4l4.42 6.74L18.9 2Zm-1.1 18h1.73L6.26 3.88H4.4L17.8 20Z'],
+    ];
+    for (const [className, label, href, path] of links) {
+      const link = document.createElement('a');
+      link.className = className;
+      link.href = href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.setAttribute('aria-label', label);
+      link.title = label;
+      link.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="${path}"/></svg>`;
+      socialLinks.append(link);
+    }
+    root.querySelector('.viewer-header').append(socialLinks);
     this.energy = document.createElement('section');
     this.energy.id = 'source-energy';
     this.energy.innerHTML = '<h3>Energy left</h3>';

@@ -26,3 +26,7 @@ Supplied screenshots and sprite references were development references, not runt
 ## Icons and dependencies
 
 Inline icons use Lucide paths (ISC license); see `third_party/lucide/LICENSE`. Three.js (MIT), lil-gui (MIT), and other package dependencies retain their own package licenses. No third-party attribution has been removed as part of cleanup.
+
+## Header portrait
+
+`public/images/archon-portrait.gif` is the animated Archon portrait supplied by the maintainer for the header and README. It is fan-project artwork/reference material, not original MIT-licensed code. StarCraft-related characters and imagery retain their respective rights holders' rights; inclusion here does not grant a separate reuse license. The project's non-commercial fan-made purpose is an intent statement, not a claim of official affiliation or permission from Blizzard Entertainment.

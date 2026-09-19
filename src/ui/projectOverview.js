@@ -2,7 +2,7 @@
 export const projectOverview = `
   <section id="how-it-works" aria-labelledby="how-heading">
     <h2 id="how-heading">How it works</h2>
-    <p>This live interactive simulation uses a computational model based on the fruit-fly connectome. The upper view runs the model and its virtual body; it is not a recorded video.</p>
+    <p>What would it take for an Archon to act on its own? ArchonBrain explores autonomy and a sense of life through a body that responds to its environment. A computational model based on the fruit-fly connectome drives this live experiment; moving A or B changes what it senses next.</p>
     <ol class="overview-stages">
       <li><strong>Sense.</strong> Virtual energy sources supply signals mapped to simulated odor inputs. This is a sensory mapping, not physical odor sensing.</li>
       <li><strong>Respond.</strong> Measured fly brain outputs influence movement, turning, and absorption control. Application rules translate those outputs into body commands.</li>
@@ -39,11 +39,11 @@ export const projectOverview = `
       <article><span class="roadmap-status">Planned exploration</span><h3>Learning &amp; adaptation</h3><p>Investigate whether limited parts of the neural control pathway can adapt through repeated trials.</p><p>The aim is to test whether experience can improve energy acquisition, rather than only producing a fixed response.</p></article>
       <article><span class="roadmap-status">Planned exploration</span><h3>Before-and-after evaluation</h3><p>Compare a fixed baseline with an adapted controller on unseen source layouts.</p><p>Improvement should be measured, not inferred from an animation or a training counter.</p></article>
       <article><span class="roadmap-status">Planned exploration</span><h3>Clearer neural-to-behavior explanations</h3><p>Make the contribution of sensory signals, measured neural activity, and engineered control rules easier to understand.</p><p>Visitors should be able to tell what the model contributes and what the application supplies.</p></article>
-      <article><span class="roadmap-status">Planned exploration</span><h3>Richer control tasks</h3><p>Explore more demanding environments and control challenges while keeping the neural loop interpretable.</p><p>More meaningful tasks can reveal both useful behavior and the limits of the controller.</p></article>
+      <article><span class="roadmap-status">Long-term exploration</span><h3>Beyond the Archon</h3><p>Explore other StarCraft units with different bodies, sensory mappings and control tasks, potentially extending to the wider cast.</p><p>Each unit would need its own integration and evaluation. Only the Archon is implemented today; a full roster is an aspiration, not a promised feature.</p></article>
       <article><span class="roadmap-status">Ongoing refinement</span><h3>A more approachable public experience</h3><p>Continue separating the interactive demonstration, experiment controls, and developer diagnostics.</p><p>The project should be understandable without reading raw neural data.</p></article>
     </div>
   </section>
   <section id="project-direction">
     <h2>Why this direction matters</h2>
-    <p>The current demo explores how a fly-connectome-based controller can operate a different virtual body through a connected sensory and motor loop. Future experiments would test whether limited adaptation can improve performance on new tasks. That question remains open.</p>
+    <div><p>The creative goal is to give a familiar character autonomy and vitality: a world to sense, a body to act with, and consequences that shape its next response. The connected loop exists today. Learning and broader character support remain questions for future experiments, not claims of consciousness or biological life.</p><p>ArchonBrain is an independent, non-commercial fan-made creative project. It is not affiliated with or endorsed by Blizzard Entertainment. StarCraft and its characters belong to their respective rights holders.</p></div>
   </section>`;

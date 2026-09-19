@@ -7,6 +7,10 @@
 .experience-ui #experiment-internals { display: none; }
 .experience-ui .viewer-header { position: relative; inset: auto; display: flex; gap: 24px; min-height: 88px; align-items: center; pointer-events: auto; }
 .experience-ui .wordmark { gap: 10px; flex-shrink: 0; }
+.experience-ui .social-links { margin-left: auto; display: flex; gap: 6px; flex-shrink: 0; }
+.experience-ui .social-links a { display: grid; place-items: center; width: 44px; height: 44px; color: var(--ink); border-radius: 4px; }
+.experience-ui .social-links a:hover { color: var(--active); background: var(--panel); }
+.experience-ui .social-links svg { width: 22px; height: 22px; fill: currentColor; }
 .experience-ui .mark { color: #a68d62; font-size: 32px; }
 .experience-ui h1 { font-size: 24px; font-weight: 500; }
 .experience-ui #experience-process { display: flex; align-items: center; justify-content: center; gap: 16px; flex: 1; min-width: 0; font-size: 12px; }
